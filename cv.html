@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thalia Archibald – CV</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+  <style>
+    body {
+      font-family: 'Fira Sans', 'Lucida Grande', 'Noto Sans';
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 1.8em;
+    }
+    h2 {
+      font-size: 1.3em;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #contact ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    #contact li:not(:last-child) {
+      margin-bottom: 5px;
+    }
+    .employment .employer {
+      display: inline;
+    }
+    .employment .location {
+      display: inline;
+    }
+    .employment .location::before {
+      content: " – ";
+    }
+    .employment .title {
+      display: inline;
+      margin-right: 1em;
+    }
+    .employment .title::before {
+      white-space: pre;
+      content: "\A";
+    }
+    .employment .dates {
+      margin-bottom: 1em;
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <h1>Thalia Archibald</h1>
+
+    <section id="contact">
+      <ul>
+        <li><a href="mailto:thalia@archibald.dev">thalia@archibald.dev</a></li>
+        <li>GitHub: <a href="https://github.com/thaliaarchi">thaliaarchi</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Summary</h2>
+    </section>
+
+    <section>
+      <h2>Research Interests</h2>
+    </section>
+
+    <section>
+      <h2>Favorite Papers</h2>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <h3>Brigham Young University</h3>
+      <div>Provo, Utah</div>
+      <div>Bachelor of Science in Computer Science</div>
+      <div>Minor in German</div>
+      <div>June 2023</div>
+      <ul>
+        <li>Programming languages emphasis.</li>
+        <li>German CEFR C1 “advanced” proficiency.</li>
+        <li>Teaching assistant for CS 630 Programming Language System Models
+          (graduate-level), CS 430 Software Foundations (formalized software in
+          Coq), CS 236 Discrete Mathematics (C++), and CS 235 Data Structures
+          (C++).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <ul>
+        <li class="employment">
+          <h3 class="employer">Oracle Labs</h3>
+          <div class="location">Zürich, Switzerland</div>
+          <h4 class="title">Research Intern</h4>
+          <div class="dates">July – November 2021</div>
+          <ul>
+            <li>Implemented a strip-mining optimization in the GraalVM compiler,
+              that reduces the execution cost of long-running loops, by
+              transforming them into nested loops and moving overhead-heavy
+              garbage collection safepoint polls to the outer loop. This
+              improves performance with low-pause-time garbage collectors and
+              enables further optimizations, such as vectorization.</li>
+            <li>One of 5 people who understands Graal’s loop infrastructure.
+              </li>
+          </ul>
+        </li>
+        <li class="employment">
+          <h3 class="employer">GrammaTech</h3>
+          <div class="location">Remote</div>
+          <h4 class="title">Software Engineering Intern</h4>
+          <div class="dates">April – August 2020</div>
+          <ul>
+            <li>Built warning classes for CodeSonar C/C++ static analysis suite,
+              to enforce Clang-like configurable identifier naming conventions
+              and flag use of unsafe function-like macros.</li>
+            <li>Tested cross-compiler differences, standards compliance, and
+              undefined behavior.</li>
+            <li>Worked effectively in a 30-million-line codebase.</li>
+          </ul>
+        </li>
+        <li class="employment">
+          <h3 class="employer">Mobius Labs</h3>
+          <div class="location">Berlin, Germany</div>
+          <h4 class="title">Software Engineering Intern</h4>
+          <div class="dates">January – March 2020</div>
+          <ul>
+            <li>Developed interactive TypeScript/React web app showcasing
+              computer vision SDK.</li>
+          </ul>
+        </li>
+        <li class="employment">
+          <h3 class="employer">6 Degrees Health</h3>
+          <div class="location">Portland, Oregon</div>
+          <h4 class="title">Software Developer</h4>
+          <div class="dates">May – August 2019</div>
+          <h4 class="title">Software Development Intern</h4>
+          <div class="dates">May – August 2018</div>
+          <ul>
+            <li>Developed healthcare claims-management system in Go and
+              JavaScript.</li>
+            <li>Reduced code size by an order of magnitude by designing a new
+              claim parser.</li>
+            <li>Led redesign of legacy cost analytics platform to
+              JavaScript/React and managed datasets.</li>
+            <li>Trained 3 new developers and mentored projects.</li>
+          </ul>
+        </li>
+        <li class="employment">
+          <h3 class="employer">EndFirst</h3>
+          <div class="location">Portland, Oregon</div>
+          <h4 class="title">Web Development Intern</h4>
+          <div class="dates">Summers 2015 and 2016</div>
+          <ul>
+            <li>Developed productivity and scheduling web applications in
+              TypeScript/Angular.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Writing</h2>
+      <ul>
+        <li><a href="https://thaliaarchi.github.io/coq-turing-typeclass/">
+          Coq typeclass resolution is Turing-complete</a>, 15 April 2023</li>
+      </ul>
+    </section>
+  </article>
+</body>
+</html>
