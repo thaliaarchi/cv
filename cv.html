@@ -179,45 +179,51 @@
 
     <section>
       <h2>Projects</h2>
+      <p>I learn by building and like to build foundational systems software. My
+        tools of choice are Rust and Coq.</p>
       <ul>
         <li>
           <h3>The Whitespace Programming Language</h3>
-          <p>Learning compiler techniques and building infrastructure for a
-            small programming language.</p>
+          <p>Building compiler infrastructure, particularly in the mid-end, for
+            a small programming language to learn compiler techniques.</p>
+          <h4>lazy-wspace</h4>
           <ul>
-            <li>
-              <h4>lazy-wspace</h4>
-              <ul>
-                <li></li>
-              </ul>
-            </li>
-            <li>
-              <h4>omniwsa</h4>
-              <p>A language front-end and code formatter, which unifies many
-                incompatible dialects into one interoperable concrete syntax
-                tree.</p>
-              <ul>
-                <li>Excellent error recovery. Every program parses to a syntax
-                  tree.</li>
-              </ul>
-            </li>
-            <li>
-              <h4>The Whitespace Corpus</h4>
-              <div><a href="https://github.com/wspace/corpus">GitHub</a></div>
-              <p>Amassed a collection of 366 Whitespace interpreters, compilers,
-                and assemblers in 41 programming languages.</p>
-              <ul>
-                <li>Engineered infrastructure to build and run every project
-                  automatically with Docker.</li>
-                <li>Enabled cross-community implementations.</li>
-              </ul>
-            </li>
+            <li>Architected a compiler IR based on sea of nodes like in the
+              HotSpot and Graal Java compilers.</li>
           </ul>
+          <p>GitHub: thaliaarchi/<a href="https://github.com/thaliaarchi/lazy-wspace">lazy-wspace</a></p>
+          <h4>Nebula</h4>
+          <ul>
+            <li>Optimizing compiler in Go with custom intermediate
+              representation in static single-assignment form, that generates
+              LLVM IR.</li>
+            <li>Converts dynamic stack to registers and statically detects
+              underflow.</li>
+            <li>Constant folding and strength reduction optimizations for
+              arithmetic.</li>
+          </ul>
+          <p>GitHub: thaliaarchi/<a href="https://github.com/thaliaarchi/nebula">nebula</a></p>
+          <h4>omniwsa</h4>
+          <p>A language front-end and code formatter, which unifies many
+            incompatible dialects into one interoperable concrete syntax
+            tree.</p>
+          <ul>
+            <li>Excellent error recovery. Every program parses to a syntax
+              tree.</li>
+          </ul>
+          <p>GitHub: thaliaarchi/<a href="https://github.com/thaliaarchi/omniwsa">omniwsa</a></p>
+          <h4>The Whitespace Corpus</h4>
+          <p>Amassed a collection of 366 Whitespace interpreters, compilers,
+            and assemblers in 41 programming languages.</p>
+          <ul>
+            <li>Engineered infrastructure to build and run every project
+              automatically with Docker.</li>
+            <li>Enabled cross-community implementations.</li>
+          </ul>
+          <p>GitHub: wspace/<a href="https://github.com/wspace/corpus">corpus</a></p>
         </li>
         <li>
           <h3>The Regexp Museum</h3>
-          <div><a href="https://github.com/thaliaarchi/regexp-museum">
-            GitHub</a></div>
           <p>Researching the history and evolution of the syntax, semantics, and
             code in regular expression engines.</p>
           <ul>
@@ -229,55 +235,43 @@
             <li>Archived and made usable many old, obscure engines whose
               influence has been forgotten.</li>
           </ul>
+          <p>GitHub: thaliaarchi/<a href="https://github.com/thaliaarchi/regexp-museum">regexp-museum</a></p>
         </li>
         <li>
           <h3>git-transform-repo</h3>
-          <div><a href="https://github.com/thaliaarchi/git-transform-repo">
-            GitHub</a></div>
-          <p>A library to manipulate Git repositories efficiently as streams of
-            data and metadata.</p>
-          <p>zero-copy, streamed parsing (with excellent error reporting).
-            Allocations are performed lazily, as values are used.
-            For more extensibility, users can write code in Python or Rust
-            callbacks. Python has some overhead, but it's not bad.</p>
           <ul>
+            <li>Library in Rust to manipulate Git repositories efficiently as
+              streams of data and metadata.</li>
+            <li>Zero-copy, streamed parser with excellent error reporting.
+              Allocations are performed lazily, when parsed values need to be
+              retained.</li>
             <li>Contributed patches upstream to Git to harden parsing.</li>
           </ul>
-        </li>
-        <li>
-          <h3>repo-archival</h3>
-          <div><a href="https://github.com/thaliaarchi/repo-archival">
-            GitHub</a></div>
+          <p>GitHub: thaliaarchi/<a href="https://github.com/thaliaarchi/git-transform-repo">git-transform-repo</a></p>
         </li>
         <li>
           <h3>bdd-rust</h3>
-          <div><a href="https://github.com/thaliaarchi/bdd-rust">
-            GitHub</a></div>
+          <p>GitHub: thaliaarchi/<a href="https://github.com/thaliaarchi/bdd-rust">bdd-rust</a></p>
         </li>
         <li>
-          <h3>Coq formalisms</h3>
+          <h3>Formal verification with Coq</h3>
           <ul>
-            <li>
-              <h4>bfcoq</h4>
-              <div><a href="https://github.com/thaliaarchi/bfcoq">
-                GitHub</a></div>
-            </li>
-            <li>
-              <h3>wscoq</h3>
-              <div><a href="https://github.com/thaliaarchi/wscoq">
-                GitHub</a></div>
-            </li>
-            <li>
-              <h3>recross-coq</h3>
-              <div><a href="https://github.com/thaliaarchi/recross-coq">
-                GitHub</a></div>
-            </li>
+            <li>Formalized small compilers in Coq, that progressively transform
+              through levels of intermediate languages.</li>
+            <li>Verified a regular expression engine and transformations with
+              morphisms. Includes regexp intersection and a generic interval
+              set.</li>
+            <li>Used components from the CompCert compiler.</li>
           </ul>
+          <p>GitHub:
+            thaliaarchi/{<a href="https://github.com/thaliaarchi/bfcoq">bfcoq</a>,
+            <a href="https://github.com/thaliaarchi/recross-coq">recross-coq</a>,
+            <a href="https://github.com/thaliaarchi/wscoq">wscoq</a>}
+          </p>
         </li>
         <li>
           <h3>Mersenne Untwist</h3>
-          <div><a href="https://github.com/thaliaarchi/mersenne-untwist">
-            GitHub</a></div>
+          <p>GitHub: thaliaarchi/<a href="https://github.com/thaliaarchi/mersenne-untwist">mersenne-untwist</a></p>
         </li>
       </ul>
     </section>
