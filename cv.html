@@ -116,16 +116,17 @@
           <div class="location">Zürich, Switzerland</div>
           <h4 class="title">Research Intern</h4>
           <div class="dates">July – November 2021</div>
-          <p>Implemented a strip-mining optimization in the GraalVM compiler,
-            which transforms long-running loops in Java programs to reduce
-            execution cost. This optimization transforms loops into nested loops
-            and moves overhead-heavy garbage collection safepoint polls to the
-            outer loop.</p>
           <ul>
-            <li>Improved performance with low-pause-time garbage collectors and
-              enabled further optimizations, such as vectorization.</li>
-            <li>Became one of 5 people who understands Graal’s loop
-              infrastructure.</li>
+            <li>Implemented an optimization phase in the core of the GraalVM
+              compiler. It performs “strip mining” on long-running loops in Java
+              programs, transforming loops into nested loops and moving
+              overhead-heavy operations out of the inner loop.</li>
+            <li>This reduces the execution cost of safepoint polling for garbage
+              collection and improves performance with low-pause-time garbage
+              collectors. It also enables further optimizations, such as
+              vectorization, that combine for large speed-ups.</li>
+            <li>Became one of 5 people who understands the complex
+              infrastructure for loops in Graal.</li>
           </ul>
         </li>
         <li class="employment">
