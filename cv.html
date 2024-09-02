@@ -9,7 +9,7 @@
       font-family: 'Fira Sans', 'Lucida Grande', 'Noto Sans';
     }
     h1, h2, h3, h4, h5, h6 {
-      font-weight: 500;
+      font-weight: 600;
     }
     h1 {
       font-size: 1.8em;
@@ -18,9 +18,11 @@
       font-size: 1.3em;
     }
     a {
+      color: #269;
       text-decoration: none;
     }
     a:hover {
+      color: #333;
       text-decoration: underline;
     }
     #contact ul {
@@ -29,6 +31,14 @@
     }
     #contact li:not(:last-child) {
       margin-bottom: 5px;
+    }
+    .presentation-name, .writing-name {
+      color: #333;
+      font-weight: 500;
+    }
+    .presentations p, .writing p {
+      margin-block-start: 0.25em;
+      margin-block-end: 0.5em;
     }
     .employment .employer {
       display: inline;
@@ -89,27 +99,82 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Presentations and writing</h2>
+    <section class="presentations">
+      <h2>Presentations</h2>
       <ul>
-        <li><a href="https://thaliaarchi.github.io/coq-turing-typeclass/">
-          Coq typeclass resolution is Turing-complete</a>, 15 April 2023</li>
-        <li><a href="https://web.archive.org/web/20230528061056/https://faculty.cs.byu.edu/~kimball/630/dependent-types.html">
-          Dependent Types: The Calculus of Constructions</a>, 7 and 9 March 2023</li>
-        <li><a href="https://github.com/thaliaarchi/pl-papers/blob/main/coc/printf.v">
-          Dependently typed <code>printf</code> in four styles</a>, 9 March 2023</li>
-        <li><a href="https://github.com/thaliaarchi/pl-papers/tree/main/cti">
-          Collapsing Towers of Interpreters</a>, 24 and 26 January 2023</li>
-        <li>“Effects of Compiler Intermediate Representation Design on
-          Ergonomics: A Literature Review”, 8 December 2022 —<br>
-          A comparative analysis of intermediate representations in LLVM,
-          MLIR, GraalVM, CompCert, and WebAssembly.</li>
-        <li><a href="https://github.com/thaliaarchi/notes/tree/main/logic/adapton">
-          Incremental computation with Adapton and miniAdapton</a>, 19 July 2022</li>
-        <li><a href="https://github.com/thaliaarchi/notes/blob/main/topics/futamura.md">
-          Futamura projections</a>, 31 March 2022</li>
-        <li><a href="https://github.com/thaliaarchi/notes/blob/main/compilers/llvm/presentation_outline.md">
-          LLVM architecture and SSA form</a>, 8 and 10 March 2022</li>
+        <li>
+          <strong class="presentation-name"><a href="https://web.archive.org/web/20230528061056/https://faculty.cs.byu.edu/~kimball/630/dependent-types.html">
+            Dependent Types: The Calculus of Constructions</a></strong>,
+          7 and 9 March 2023
+          <p>Introduction to dependent types in Coq, including demonstrations of
+            a <a href="https://github.com/thaliaarchi/pl-papers/blob/main/coc/printf.v">
+            strongly typed <code>printf</code></a> in four styles and a
+            <a href="https://github.com/thaliaarchi/pl-papers/blob/main/coc/vec.v">
+            vector with dependent length</a>.</p>
+        </li>
+        <li>
+          <strong class="presentation-name"><a href="https://github.com/thaliaarchi/pl-papers/tree/main/cti">
+            Collapsing Towers of Interpreters</a></strong>,
+          24 and 26 January 2023
+          <p>Demonstration of four implementations by me of the languages in
+            “Collapsing Towers of Interpreters” (Amin and Rompf, 2018) in Coq
+            and Rust, and discussion of partial evaluation and trusting trust
+            (Thompson, 1984).</p>
+        </li>
+        <li>
+          <strong class="presentation-name">
+            A Brief History of Software Documentation</strong>,
+          4 October 2022
+          <p>Tour of software documentation via comments in the Apollo Guidance
+            Computer source, literate programming in TeX, and documentation
+            generation in Rust.</p>
+        </li>
+        <li>
+          <strong class="presentation-name"><a href="https://github.com/thaliaarchi/notes/tree/main/logic/adapton">
+            Incremental Computation with Adapton</a></strong>,
+          19 July 2022
+          <p>Review of demand-driven incremental computation with Adapton
+            (Hammer et al., 2014) and minimal versions, miniAdapton and
+            microAdapton (Fisher et al., 2016).</p>
+        </li>
+        <li>
+          <strong class="presentation-name"><a href="https://github.com/thaliaarchi/notes/blob/main/topics/futamura.md">
+            Futamura Projections and Partial Evaluation</a></strong>,
+          31 March 2022
+          <p>Introduction to partial evaluation of compilers (Futamura, 1971)
+            and live coding, applying the first Futamura projection to a simple
+            language.</p>
+        </li>
+        <li>
+          <strong class="presentation-name"><a href="https://github.com/thaliaarchi/notes/blob/main/compilers/llvm/presentation_outline.md">
+            Architecture of LLVM and tutorial</a></strong>,
+          8 and 10 March 2022
+          <p>Overview of the architecture and design of LLVM, including static
+            single-assignment form and the tiered architecture, and
+            walkthrough of building an LLVM front-end, demonstrating how various
+            constructs are lowered.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="writing">
+      <h2>Writing</h2>
+      <ul>
+        <li>
+          <strong class="writing-name"><a href="https://thaliaarchi.github.io/coq-turing-typeclass/">
+            Coq typeclass resolution is Turing-complete</a></strong>,
+          15 April 2023
+          <p>Proof by construction that the typeclass resolver in Coq can
+            perform arbitrary computation while searching for instances.</p>
+        </li>
+        <li>
+          <strong class="writing-name">
+            Effects of Compiler Intermediate Representation Design on
+            Ergonomics: A Literature Review</strong>,
+          8 December 2022
+          <p>Comparative analysis of intermediate representations in LLVM, MLIR,
+            GraalVM, CompCert, and WebAssembly.</p>
+        </li>
       </ul>
     </section>
 
