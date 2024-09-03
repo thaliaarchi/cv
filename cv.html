@@ -259,47 +259,45 @@
 
     <section>
       <h2>Projects</h2>
-      <p>I learn by building and like to build foundational systems software. My
-        tools of choice are Rust and Coq.</p>
+      <p>I learn by building and enjoy implementing foundational systems
+        software. My tools of choice are Rust and Coq.</p>
       <ul>
         <li>
           <h3>Compiler infrastructure</h3>
-          <p>Building compiler infrastructure, particularly in the mid-end, for
-            a small programming language to learn compiler techniques. I've used
-            it as a platform to learn.</p>
+          <p>Building compiler infrastructure, particularly in the mid-end, to
+            learn compiler techniques.</p>
           <ul>
-            <li>Experimented with adapting the Cranelift infrastructure to
+            <li>
+              <h4><a href="https://github.com/thaliaarchi/lazy-wspace">lazy-wspace</a>
+                and <a href="https://github.com/thaliaarchi/nebula">Nebula</a>
+                compilers</h4>
+              <p>Optimizing compilers in Rust and Go with custom-built
+                intermediate representations. They have similar goals, but
+                different approaches.</p>
+              <ul>
+                <li>Implemented various intermediate representations: sea of
+                  nodes like HotSpot and Graal (lazy-wspace) and static
+                  single-assignment form with basic blocks like LLVM
+                  (Nebula).</li>
+                <li>Converted a stack-oriented model to registers by abstractly
+                  interpreting dynamic stack operations and statically detecting
+                  underflow.</li>
+                <li>Integrated with LLVM by generating LLVM IR (Nebula).</li>
+                <li>Built an arena-based IR inspired by Cranelift with global
+                  value numbering (lazy-wspace).</li>
+                <li>Implemented constant folding and many peephole optimizations
+                  for arithmetic and bitwise operations.</li>
+              </ul>
             </li>
-            <li>I've made interpreters for Whitespace in numerous languages: in
-              Rust, Go, C++, Whitespace, even Brainfuck.
+            <li>
+              <h4><a href="https://github.com/thaliaarchi/omniwsa">omniwsa</a>
+                assembler</h4>
+              <p>A language front-end and code formatter, which unifies many
+                incompatible dialects into one interoperable concrete syntax
+                tree. It has excellent error recovery and every program parses
+                to a syntax tree.</p>
             </li>
           </ul>
-          <h4>lazy-wspace</h4>
-          <ul>
-            <li>Architected a compiler IR based on sea of nodes like in the
-              HotSpot and Graal Java compilers.</li>
-          </ul>
-          <p>GitHub: thaliaarchi/<a href="https://github.com/thaliaarchi/lazy-wspace">lazy-wspace</a></p>
-          <h4>Nebula</h4>
-          <ul>
-            <li>Optimizing compiler in Go with custom intermediate
-              representation in static single-assignment form, that generates
-              LLVM IR.</li>
-            <li>Converts dynamic stack to registers and statically detects
-              underflow.</li>
-            <li>Constant folding and strength reduction optimizations for
-              arithmetic.</li>
-          </ul>
-          <p>GitHub: thaliaarchi/<a href="https://github.com/thaliaarchi/nebula">nebula</a></p>
-          <h4>omniwsa</h4>
-          <p>A language front-end and code formatter, which unifies many
-            incompatible dialects into one interoperable concrete syntax
-            tree.</p>
-          <ul>
-            <li>Excellent error recovery. Every program parses to a syntax
-              tree.</li>
-          </ul>
-          <p>GitHub: thaliaarchi/<a href="https://github.com/thaliaarchi/omniwsa">omniwsa</a></p>
         </li>
         <li>
           <h3>Formal verification</h3>
@@ -325,7 +323,8 @@
           <h3>Software history</h3>
           <ul>
             <li>
-              <h4>The Regexp Museum</h4>
+              <h4><a href="https://github.com/thaliaarchi/regexp-museum">
+                The Regexp Museum</a></h4>
               <p>Researching the history and evolution of the syntax, semantics,
                 and code in regular expression engines.</p>
               <ul>
@@ -335,32 +334,28 @@
                   <code>grep</code> and <code>ed</code>.</li>
                 <li>Cataloged around 100 regular expression implementations.</li>
                 <li>Archived and made usable many old, obscure engines whose
-                  influence has been forgotten.</li>
+                  influence had been forgotten.</li>
               </ul>
-              <p>GitHub: thaliaarchi/<a href="https://github.com/thaliaarchi/regexp-museum">regexp-museum</a></p>
             </li>
             <li>
-              <h4>git-transform-repo</h4>
+              <h4><a href="https://github.com/thaliaarchi/git-transform-repo">
+                git-transform-repo</a></h4>
+              <p>Library in Rust to manipulate Git repositories efficiently as
+                streams of data and metadata.</p>
               <ul>
-                <li>Library in Rust to manipulate Git repositories efficiently
-                  as streams of data and metadata.</li>
                 <li>Zero-copy, streamed parser with excellent error reporting.
                   Allocations are performed lazily, when parsed values need to
                   be retained.</li>
                 <li>Contributed patches upstream to Git to harden parsing.</li>
               </ul>
-              <p>GitHub: thaliaarchi/<a href="https://github.com/thaliaarchi/git-transform-repo">git-transform-repo</a></p>
             </li>
             <li>
-              <h4>The Whitespace Corpus</h4>
-              <p>Amassed a collection of 366 Whitespace interpreters, compilers,
-                and assemblers in 41 programming languages.</p>
-              <ul>
-                <li>Engineered infrastructure to build and run every project
-                  automatically with Docker.</li>
-                <li>Enabled cross-community implementations.</li>
-              </ul>
-              <p>GitHub: wspace/<a href="https://github.com/wspace/corpus">corpus</a></p>
+              <h4><a href="https://github.com/wspace/corpus">
+                The Whitespace Corpus</a></h4>
+              <p>Collected 368 interpreters, compilers, and assemblers for the
+                Whitespace programming language, implemented in 41 programming
+                languages, and engineered infrastructure to build and run every
+                project automatically with Docker.</p>
             </li>
           </ul>
         </li>
