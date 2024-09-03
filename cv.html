@@ -302,25 +302,47 @@
         <li>
           <h3>Formal verification</h3>
           <ul>
-            <li>Formalized small compilers in Coq, that progressively transform
-              through levels of intermediate languages.</li>
-            <li>Verified a regular expression engine and transformations with
-              morphisms in Coq. Includes regexp intersection and a generic
-              interval set.</li>
-            <li>Used components from the CompCert compiler.</li>
-            <li>TODO: Mersenne Untwist</li>
-            <li>TODO: bdd-rust</li>
+            <li>
+              <h4><a href="https://github.com/thaliaarchi/mersenne-untwist">
+                Mersenne Untwist</a></h4>
+              <p>A reverse implementation of the MT19937 Mersenne Twister
+                pseudorandom number generator, that can recover the seed in some
+                cases, when given the desired outputs.</p>
+              <ul>
+                <li>Produced a closed-form reverse implementation that is just
+                  as fast as forwards, through cryptanalysis of the bitwise
+                  operations and value dependencies.</li>
+                <li>Implemented an abstract version using Z3, which solves for
+                  seeds that produce the bits you care about.</li>
+                <li>Developed a high-level Rust API for Z3, that is easier to
+                  use than the de facto bindings and has stricter static
+                  types.</li>
+              </ul>
+            </li>
+            <li>
+              <h4><a href="https://github.com/thaliaarchi/bfcoq">bfcoq</a> and
+                <a href="https://github.com/thaliaarchi/wscoq">wscoq</a></h4>
+              <p>Small compilers formalized in Coq, that progressively transform
+                through levels of intermediate languages. Used components from
+                the CompCert compiler.</p>
+            </li>
+            <li>
+              <h4><a href="https://github.com/thaliaarchi/recross-coq">Recross</a></h4>
+              <p>Verified regular expression engine in Coq, that has
+                intersection. Includes a generic interval set and many rewrites
+                with morphisms.</p>
+            </li>
+            <li>
+              <h4><a href="https://github.com/thaliaarchi/bdd-rust">bdd-rust</a></h4>
+              <p>An efficient library in Rust for binary decision diagrams with
+                bit blasting and an ergonomic API.</p>
+            </li>
           </ul>
-          <p>GitHub:
-            thaliaarchi/{<a href="https://github.com/thaliaarchi/bfcoq">bfcoq</a>,
-            <a href="https://github.com/thaliaarchi/recross-coq">recross-coq</a>,
-            <a href="https://github.com/thaliaarchi/wscoq">wscoq</a>,
-            <a href="https://github.com/thaliaarchi/mersenne-untwist">mersenne-untwist</a>,
-            <a href="https://github.com/thaliaarchi/bdd-rust">bdd-rust</a>}
-          </p>
         </li>
         <li>
           <h3>Software history</h3>
+          <p>The history of software inspires me, and I work to archive old
+            software.</p>
           <ul>
             <li>
               <h4><a href="https://github.com/thaliaarchi/regexp-museum">
