@@ -41,15 +41,19 @@
     #contact li:not(:last-child) {
       margin-bottom: 5px;
     }
+    .long-items {
+      list-style-type: none;
+    }
+    .short-items, .details {
+      list-style-type: disc;
+    }
+    .details {
+      margin-top: 0.25em;
+      margin-bottom: 1em;
+    }
     p {
       margin-block-start: 0.25em;
       margin-block-end: 0.5em;
-    }
-    #employment > ul {
-      list-style-type: none;
-    }
-    .job > ul {
-      list-style-type: disc;
     }
   </style>
 </head>
@@ -80,7 +84,7 @@
       <div class="subtitle">
         <strong>Minor in German</strong>
       </div>
-      <ul>
+      <ul class="details">
         <li>Primarily studied in programming languages and systems software,
           mentored by Kimball Germane.</li>
         <li>Teaching assistant for CS 630 Programming Language System Models
@@ -96,7 +100,7 @@
 
     <section>
       <h2>Presentations</h2>
-      <ul>
+      <ul class="short-items">
         <li>
           <div class="title">
             <strong><a href="https://web.archive.org/web/20230528061056/https://faculty.cs.byu.edu/~kimball/630/dependent-types.html">
@@ -165,7 +169,7 @@
 
     <section>
       <h2>Writing</h2>
-      <ul>
+      <ul class="short-items">
         <li>
           <div class="title">
             <strong><a href="https://thaliaarchi.github.io/coq-turing-typeclass/">
@@ -189,59 +193,66 @@
 
     <section>
       <h2>Professional Experience</h2>
-      <ul>
-        <li class="job">
+      <ul class="long-items">
+        <li>
           <div class="title">
             <strong>Oracle Labs</strong> · Zürich, Switzerland
           </div>
           <div class="subtitle">
             <strong>Research Intern</strong>, July – November 2021
           </div>
-          <ul>
-            <li>Implemented an optimization phase in the core of the GraalVM
-              compiler. It performs “strip mining” on long-running loops in Java
-              programs, transforming loops into nested loops and moving
-              overhead-heavy operations out of the inner loop.</li>
-            <li>This reduces the execution cost of safepoint polling for garbage
-              collection and improves performance with low-pause-time garbage
-              collectors. It also enables further optimizations, such as
-              vectorization, that combine for large speed-ups.</li>
-            <li>Became one of 5 people who understands the complex
-              infrastructure for loops in Graal.</li>
-          </ul>
+          <div class="details">
+            <ul>
+              <li>Implemented an optimization phase in the core of the GraalVM
+                compiler. It performs “strip mining” on long-running loops in
+                Java programs, transforming loops into nested loops and moving
+                overhead-heavy operations out of the inner loop.</li>
+              <li>This reduces the execution cost of safepoint polling for
+                garbage collection and improves performance with low-pause-time
+                garbage collectors. It also enables further optimizations, such
+                as vectorization, that combine for large speed-ups.</li>
+              <li>Became one of 5 people who understands the complex
+                infrastructure for loops in Graal.</li>
+            </ul>
+          </div>
         </li>
-        <li class="job">
+        <li>
           <div class="title">
             <strong>GrammaTech</strong> · Remote
           </div>
           <div class="subtitle">
             <strong>Software Engineering Intern</strong>, April – August 2020
           </div>
-          <ul>
-            <li>Built static analyses for CodeSonar, which enforce naming
-              convention styles configurably like Clang and flag usage of
-              function-like macros instead of functions in C/C++ code.</li>
-            <li>Implemented a regular expression that expanded to 1100
-              characters, which precisely handles all lexical C++ features
-              before preprocessing.</li>
-            <li>Identified cross-compiler differences and undefined behavior,
-              and tested MISRA and C++ standards compliance.</li>
-            <li>Effectively came up to speed in their 30-million-line codebase,
-              despite unexpected remote mentorship due to COVID.</li>
-          </ul>
+          <div class="details">
+            <ul>
+              <li>Built static analyses for CodeSonar, which enforce naming
+                convention styles configurably like Clang and flag usage of
+                function-like macros instead of functions in C/C++ code.</li>
+              <li>Implemented a regular expression that expanded to 1100
+                characters, which precisely handles all lexical C++ features
+                before preprocessing.</li>
+              <li>Identified cross-compiler differences and undefined behavior,
+                and tested MISRA and C++ standards compliance.</li>
+              <li>Effectively came up to speed in their 30-million-line
+                codebase, despite unexpected remote mentorship due to
+                COVID.</li>
+            </ul>
+          </div>
         </li>
-        <li class="job">
+        <li>
           <div class="title">
             <strong>Mobius Labs</strong> · Berlin, Germany
           </div>
           <div class="subtitle">
             <strong>Software Engineering Intern</strong>, January – March 2020
           </div>
-          <p>Worked as part of a study abroad for my German minor. Developed an
-            interactive web app showcasing the startup's computer vision SDK.
-          </p>
+          <div class="details">
+            <p>Worked as part of a study abroad for my German minor. Developed
+              an interactive web app showcasing the startup's computer vision
+              SDK.</p>
+          </div>
         </li>
-        <li class="job">
+        <li>
           <div class="title">
             <strong>6 Degrees Health</strong> · Portland, Oregon
           </div>
@@ -251,28 +262,33 @@
           <div class="subtitle">
             <strong>Software Development Intern</strong>, May – August 2018
           </div>
-          <ul>
-            <li>Developed the redesigned MediVI healthcare cost analytics
-              platform from scratch. At the time there was no comparable tool on
-              the market and MediVI has since become the industry archetype. It
-              was pivotal to the success of the company: MediVI was used in
-              every sales call, cementing their technology-centric reputation in
-              healthcare pricing, and contributed to their $85 million valuation.
-              Even as an intern, I had an oversized impact on this startup.</li>
-            <li>Developed many features for the in-house healthcare
-              claims-management system in TypeScript/React and Go.</li>
-            <li>Trained 3 new developers and mentored projects.</li>
-          </ul>
+          <div class="details">
+            <ul>
+              <li>Developed the redesigned MediVI healthcare cost analytics
+                platform from scratch. At the time there was no comparable tool
+                on the market and MediVI has since become the industry
+                archetype. It was pivotal to the success of the company: MediVI
+                was used in every sales call, cementing their technology-centric
+                reputation in healthcare pricing, and contributed to their $85
+                million valuation. Even as an intern, I had an oversized impact
+                on this startup.</li>
+              <li>Developed many features for the in-house healthcare
+                claims-management system in TypeScript/React and Go.</li>
+              <li>Trained 3 new developers and mentored projects.</li>
+            </ul>
+          </div>
         </li>
-        <li class="job">
+        <li>
           <div class="title">
             <strong>EndFirst</strong> · Portland, Oregon
           </div>
           <div class="subtitle">
             <strong>Web Development Intern</strong>, Summers 2015 and 2016
           </div>
-          <p>Developed front-end web applications in TypeScript/Angular,
-            including a document manager and scheduler.</p>
+          <div class="details">
+            <p>Developed front-end web applications in TypeScript/Angular,
+              including a document manager and scheduler.</p>
+          </div>
         </li>
       </ul>
     </section>
@@ -281,86 +297,98 @@
       <h2>Projects</h2>
       <p>I learn by building and enjoy implementing foundational systems
         software. My tools of choice are Rust and Coq.</p>
-      <ul>
+      <ul class="long-items">
         <li>
           <h3>Compiler infrastructure</h3>
           <p>Building compiler infrastructure, particularly in the mid-end, to
             learn compiler techniques.</p>
-          <ul>
+          <ul class="long-items">
             <li>
               <strong class="title">
                 <a href="https://github.com/thaliaarchi/lazy-wspace">lazy-wspace</a>
                 and <a href="https://github.com/thaliaarchi/nebula">Nebula</a>
                 compilers</strong>
-              <p>Optimizing compilers in Rust and Go with custom-built
-                intermediate representations. They have similar goals, but
-                different approaches.</p>
-              <ul>
-                <li>Implemented various intermediate representations: sea of
-                  nodes like HotSpot and Graal (lazy-wspace) and static
-                  single-assignment form with basic blocks like LLVM
-                  (Nebula).</li>
-                <li>Converted a stack-oriented model to registers by abstractly
-                  interpreting dynamic stack operations and statically detecting
-                  underflow.</li>
-                <li>Integrated with LLVM by generating LLVM IR (Nebula).</li>
-                <li>Built an arena-based IR inspired by Cranelift with global
-                  value numbering (lazy-wspace).</li>
-                <li>Implemented constant folding and many peephole optimizations
-                  for arithmetic and bitwise operations.</li>
-              </ul>
+              <div class="details">
+                <p>Optimizing compilers in Rust and Go with custom-built
+                  intermediate representations. They have similar goals, but
+                  different approaches.</p>
+                <ul>
+                  <li>Implemented various intermediate representations: sea of
+                    nodes like HotSpot and Graal (lazy-wspace) and static
+                    single-assignment form with basic blocks like LLVM
+                    (Nebula).</li>
+                  <li>Converted a stack-oriented model to registers by
+                    abstractly interpreting dynamic stack operations and
+                    statically detecting underflow.</li>
+                  <li>Integrated with LLVM by generating LLVM IR (Nebula).</li>
+                  <li>Built an arena-based IR inspired by Cranelift with global
+                    value numbering (lazy-wspace).</li>
+                  <li>Implemented constant folding and many peephole
+                    optimizations for arithmetic and bitwise operations.</li>
+                </ul>
+              </div>
             </li>
             <li>
               <strong class="title">
                 <a href="https://github.com/thaliaarchi/omniwsa">omniwsa</a>
                 assembler</strong>
-              <p>A language front-end and code formatter, which unifies many
-                incompatible dialects into one interoperable concrete syntax
-                tree. It has excellent error recovery and every program parses
-                to a syntax tree.</p>
+              <div class="details">
+                <p>A language front-end and code formatter, which unifies many
+                  incompatible dialects into one interoperable concrete syntax
+                  tree. It has excellent error recovery and every program parses
+                  to a syntax tree.</p>
+              </div>
             </li>
           </ul>
         </li>
         <li>
           <h3>Formal verification</h3>
-          <ul>
+          <ul class="long-items">
             <li>
               <strong class="title"><a href="https://github.com/thaliaarchi/mersenne-untwist">
                 Mersenne Untwist</a></strong>
-              <p>A reverse implementation of the MT19937 Mersenne Twister
-                pseudorandom number generator, that can recover the seed in some
-                cases, when given the desired outputs.</p>
-              <ul>
-                <li>Produced a closed-form reverse implementation that is just
-                  as fast as forwards, through cryptanalysis of the bitwise
-                  operations and value dependencies.</li>
-                <li>Implemented an abstract version using Z3, which solves for
-                  seeds that produce the bits you care about.</li>
-                <li>Developed a high-level Rust API for Z3, that is easier to
-                  use than the de facto bindings and has stricter static
-                  types.</li>
-              </ul>
+              <div class="details">
+                <p>A reverse implementation of the MT19937 Mersenne Twister
+                  pseudorandom number generator, that can recover the seed in
+                  some cases, when given the desired outputs.</p>
+                <ul>
+                  <li>Produced a closed-form reverse implementation that is just
+                    as fast as forwards, through cryptanalysis of the bitwise
+                    operations and value dependencies.</li>
+                  <li>Implemented an abstract version using Z3, which solves for
+                    seeds that produce the bits you care about.</li>
+                  <li>Developed a high-level Rust API for Z3, that is easier to
+                    use than the de facto bindings and has stricter static
+                    types.</li>
+                </ul>
+              </div>
             </li>
             <li>
               <strong class="title">
                 <a href="https://github.com/thaliaarchi/bfcoq">bfcoq</a> and
                 <a href="https://github.com/thaliaarchi/wscoq">wscoq</a></strong>
-              <p>Small compilers formalized in Coq, that progressively transform
-                through levels of intermediate languages. Used components from
-                the CompCert compiler.</p>
+              <div class="details">
+                <p>Small compilers formalized in Coq, that progressively
+                  transform through levels of intermediate languages. Used
+                  components from the CompCert compiler.</p>
+              </div>
             </li>
             <li>
               <strong class="title"><a href="https://github.com/thaliaarchi/recross-coq">
                 Recross</a></strong>
-              <p>Verified regular expression engine in Coq, that has
-                intersection. Includes a generic interval set and many rewrites
-                with morphisms.</p>
+              <div class="details">
+                <p>Verified regular expression engine in Coq, that has
+                  intersection. Includes a generic interval set and many
+                  rewrites with morphisms.</p>
+              </div>
             </li>
             <li>
               <strong class="title"><a href="https://github.com/thaliaarchi/bdd-rust">
                 bdd-rust</a></strong>
-              <p>An efficient library in Rust for binary decision diagrams with
-                bit blasting and an ergonomic API.</p>
+              <div class="details">
+                <p>An efficient library in Rust for binary decision diagrams
+                  with bit blasting and an ergonomic API.</p>
+              </div>
             </li>
           </ul>
         </li>
@@ -368,41 +396,49 @@
           <h3>Software history</h3>
           <p>The history of software inspires me, and I work to archive old
             software.</p>
-          <ul>
+          <ul class="long-items">
             <li>
               <strong class="title"><a href="https://github.com/thaliaarchi/regexp-museum">
                 The Regexp Museum</a></strong>
-              <p>Researching the history and evolution of the syntax, semantics,
-                and code in regular expression engines.</p>
-              <ul>
-                <li>Discovered novel evolutionary relationships, including
-                  tracing the development of the original Perl regexp a decade
-                  earlier through a newsreader, an old Emacs, and UNIX
-                  <code>grep</code> and <code>ed</code>.</li>
-                <li>Cataloged around 100 regular expression implementations.</li>
-                <li>Archived and made usable many old, obscure engines whose
-                  influence had been forgotten.</li>
-              </ul>
+              <div class="details">
+                <p>Researching the history and evolution of the syntax,
+                  semantics, and code in regular expression engines.</p>
+                <ul>
+                  <li>Discovered novel evolutionary relationships, including
+                    tracing the development of the original Perl regexp a decade
+                    earlier through a newsreader, an old Emacs, and UNIX
+                    <code>grep</code> and <code>ed</code>.</li>
+                  <li>Cataloged around 100 regular expression
+                    implementations.</li>
+                  <li>Archived and made usable many old, obscure engines whose
+                    influence had been forgotten.</li>
+                </ul>
+              </div>
             </li>
             <li>
               <strong class="title"><a href="https://github.com/thaliaarchi/git-transform-repo">
                 git-transform-repo</a></strong>
-              <p>Library in Rust to manipulate Git repositories efficiently as
-                streams of data and metadata.</p>
-              <ul>
-                <li>Zero-copy, streamed parser with excellent error reporting.
-                  Allocations are performed lazily, when parsed values need to
-                  be retained.</li>
-                <li>Contributed patches upstream to Git to harden parsing.</li>
-              </ul>
+              <div class="details">
+                <p>Library in Rust to manipulate Git repositories efficiently as
+                  streams of data and metadata.</p>
+                <ul>
+                  <li>Zero-copy, streamed parser with excellent error reporting.
+                    Allocations are performed lazily, when parsed values need to
+                    be retained.</li>
+                  <li>Contributed patches upstream to Git to harden
+                    parsing.</li>
+                </ul>
+              </div>
             </li>
             <li>
               <strong class="title"><a href="https://github.com/wspace/corpus">
                 The Whitespace Corpus</a></strong>
-              <p>Collected 368 interpreters, compilers, and assemblers for the
-                Whitespace programming language, implemented in 41 programming
-                languages, and engineered infrastructure to build and run every
-                project automatically with Docker.</p>
+              <div class="details">
+                <p>Collected 368 interpreters, compilers, and assemblers for the
+                  Whitespace programming language, implemented in 41 programming
+                  languages, and engineered infrastructure to build and run
+                  every project automatically with Docker.</p>
+              </div>
             </li>
           </ul>
         </li>
