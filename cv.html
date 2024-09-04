@@ -17,6 +17,15 @@
     h2 {
       font-size: 1.3em;
     }
+    .title strong, strong.title {
+      font-weight: 600;
+      font-size: 1em;
+      color: #333;
+    }
+    .subtitle strong, strong.subtitle {
+      font-weight: 500;
+      font-size: 1em;
+    }
     a {
       color: #269;
       text-decoration: none;
@@ -32,34 +41,15 @@
     #contact li:not(:last-child) {
       margin-bottom: 5px;
     }
-    .presentation-name, .writing-name {
-      color: #333;
-      font-weight: 500;
-    }
-    .presentations p, .writing p {
+    p {
       margin-block-start: 0.25em;
       margin-block-end: 0.5em;
     }
-    .employment .employer {
-      display: inline;
+    #employment > ul {
+      list-style-type: none;
     }
-    .employment .location {
-      display: inline;
-    }
-    .employment .location::before {
-      content: " – ";
-    }
-    .employment .title {
-      display: inline;
-      margin-right: 1em;
-    }
-    .employment .title::before {
-      white-space: pre;
-      content: "\A";
-    }
-    .employment .dates {
-      margin-bottom: 1em;
-      display: inline;
+    .job > ul {
+      list-style-type: disc;
     }
   </style>
 </head>
@@ -80,11 +70,16 @@
 
     <section>
       <h2>Education</h2>
-      <h3>Brigham Young University</h3>
-      <div>Provo, Utah</div>
-      <div>Bachelor of Science in Computer Science</div>
-      <div>Minor in German</div>
-      <div>June 2023</div>
+      <div class="title">
+        <strong>Brigham Young University</strong> · Provo, Utah
+      </div>
+      <div class="subtitle">
+        <strong>Bachelor of Science in Computer Science</strong>,
+        September 2017 – June 2023
+      </div>
+      <div class="subtitle">
+        <strong>Minor in German</strong>
+      </div>
       <ul>
         <li>Primarily studied in programming languages and systems software,
           mentored by Kimball Germane.</li>
@@ -99,13 +94,15 @@
       </ul>
     </section>
 
-    <section class="presentations">
+    <section>
       <h2>Presentations</h2>
       <ul>
         <li>
-          <strong class="presentation-name"><a href="https://web.archive.org/web/20230528061056/https://faculty.cs.byu.edu/~kimball/630/dependent-types.html">
-            Dependent Types: The Calculus of Constructions</a></strong>,
-          7 and 9 March 2023
+          <div class="title">
+            <strong><a href="https://web.archive.org/web/20230528061056/https://faculty.cs.byu.edu/~kimball/630/dependent-types.html">
+              Dependent Types: The Calculus of Constructions</a></strong>,
+            7 and 9 March 2023
+          </div>
           <p>Introduction to dependent types in Coq, including demonstrations of
             a <a href="https://github.com/thaliaarchi/pl-papers/blob/main/coc/printf.v">
             strongly typed <code>printf</code></a> in four styles and a
@@ -113,42 +110,51 @@
             vector with dependent length</a>.</p>
         </li>
         <li>
-          <strong class="presentation-name"><a href="https://github.com/thaliaarchi/pl-papers/tree/main/cti">
-            Collapsing Towers of Interpreters</a></strong>,
-          24 and 26 January 2023
+          <div class="title">
+            <strong><a href="https://github.com/thaliaarchi/pl-papers/tree/main/cti">
+              Collapsing Towers of Interpreters</a></strong>,
+            24 and 26 January 2023
+          </div>
           <p>Demonstration of four implementations by me of the languages in
             “Collapsing Towers of Interpreters” (Amin and Rompf, 2018) in Coq
             and Rust, and discussion of partial evaluation and trusting trust
             (Thompson, 1984).</p>
         </li>
         <li>
-          <strong class="presentation-name">
-            A Brief History of Software Documentation</strong>,
-          4 October 2022
+          <div class="title">
+            <strong>A Brief History of Software Documentation</strong>,
+            4 October 2022
+          </div>
           <p>Tour of software documentation via comments in the Apollo Guidance
             Computer source, literate programming in TeX, and documentation
             generation in Rust.</p>
         </li>
         <li>
-          <strong class="presentation-name"><a href="https://github.com/thaliaarchi/notes/tree/main/logic/adapton">
-            Incremental Computation with Adapton</a></strong>,
-          19 July 2022
+          <div class="title">
+            <strong><a href="https://github.com/thaliaarchi/notes/tree/main/logic/adapton">
+              Incremental Computation with Adapton</a></strong>,
+            19 July 2022
+          </div>
           <p>Review of demand-driven incremental computation with Adapton
             (Hammer et al., 2014) and minimal versions, miniAdapton and
             microAdapton (Fisher et al., 2016).</p>
         </li>
         <li>
-          <strong class="presentation-name"><a href="https://github.com/thaliaarchi/notes/blob/main/topics/futamura.md">
-            Futamura Projections and Partial Evaluation</a></strong>,
-          31 March 2022
+          <div class="title">
+            <strong><a href="https://github.com/thaliaarchi/notes/blob/main/topics/futamura.md">
+              Futamura Projections and Partial Evaluation</a></strong>,
+            31 March 2022
+          </div>
           <p>Introduction to partial evaluation of compilers (Futamura, 1971)
             and live coding, applying the first Futamura projection to a simple
             language.</p>
         </li>
         <li>
-          <strong class="presentation-name"><a href="https://github.com/thaliaarchi/notes/blob/main/compilers/llvm/presentation_outline.md">
-            Architecture of LLVM and tutorial</a></strong>,
-          8 and 10 March 2022
+          <div class="title">
+            <strong><a href="https://github.com/thaliaarchi/notes/blob/main/compilers/llvm/presentation_outline.md">
+              Architecture of LLVM and tutorial</a></strong>,
+            8 and 10 March 2022
+          </div>
           <p>Overview of the architecture and design of LLVM, including static
             single-assignment form and the tiered architecture, and
             walkthrough of building an LLVM front-end, demonstrating how various
@@ -157,21 +163,24 @@
       </ul>
     </section>
 
-    <section class="writing">
+    <section>
       <h2>Writing</h2>
       <ul>
         <li>
-          <strong class="writing-name"><a href="https://thaliaarchi.github.io/coq-turing-typeclass/">
-            Coq typeclass resolution is Turing-complete</a></strong>,
-          15 April 2023
+          <div class="title">
+            <strong><a href="https://thaliaarchi.github.io/coq-turing-typeclass/">
+              Coq typeclass resolution is Turing-complete</a></strong>,
+            15 April 2023
+          </div>
           <p>Proof by construction that the typeclass resolver in Coq can
             perform arbitrary computation while searching for instances.</p>
         </li>
         <li>
-          <strong class="writing-name">
-            Effects of Compiler Intermediate Representation Design on
-            Ergonomics: A Literature Review</strong>,
-          8 December 2022
+          <div class="title">
+            <strong>Effects of Compiler Intermediate Representation Design on
+              Ergonomics: A Literature Review</strong>,
+            8 December 2022
+          </div>
           <p>Comparative analysis of intermediate representations in LLVM, MLIR,
             GraalVM, CompCert, and WebAssembly.</p>
         </li>
@@ -181,11 +190,13 @@
     <section>
       <h2>Professional Experience</h2>
       <ul>
-        <li class="employment">
-          <h3 class="employer">Oracle Labs</h3>
-          <div class="location">Zürich, Switzerland</div>
-          <h4 class="title">Research Intern</h4>
-          <div class="dates">July – November 2021</div>
+        <li class="job">
+          <div class="title">
+            <strong>Oracle Labs</strong> · Zürich, Switzerland
+          </div>
+          <div class="subtitle">
+            <strong>Research Intern</strong>, July – November 2021
+          </div>
           <ul>
             <li>Implemented an optimization phase in the core of the GraalVM
               compiler. It performs “strip mining” on long-running loops in Java
@@ -199,11 +210,13 @@
               infrastructure for loops in Graal.</li>
           </ul>
         </li>
-        <li class="employment">
-          <h3 class="employer">GrammaTech</h3>
-          <div class="location">Remote</div>
-          <h4 class="title">Software Engineering Intern</h4>
-          <div class="dates">April – August 2020</div>
+        <li class="job">
+          <div class="title">
+            <strong>GrammaTech</strong> · Remote
+          </div>
+          <div class="subtitle">
+            <strong>Software Engineering Intern</strong>, April – August 2020
+          </div>
           <ul>
             <li>Built static analyses for CodeSonar, which enforce naming
               convention styles configurably like Clang and flag usage of
@@ -217,22 +230,27 @@
               despite unexpected remote mentorship due to COVID.</li>
           </ul>
         </li>
-        <li class="employment">
-          <h3 class="employer">Mobius Labs</h3>
-          <div class="location">Berlin, Germany</div>
-          <h4 class="title">Software Engineering Intern</h4>
-          <div class="dates">January – March 2020</div>
+        <li class="job">
+          <div class="title">
+            <strong>Mobius Labs</strong> · Berlin, Germany
+          </div>
+          <div class="subtitle">
+            <strong>Software Engineering Intern</strong>, January – March 2020
+          </div>
           <p>Worked as part of a study abroad for my German minor. Developed an
             interactive web app showcasing the startup's computer vision SDK.
           </p>
         </li>
-        <li class="employment">
-          <h3 class="employer">6 Degrees Health</h3>
-          <div class="location">Portland, Oregon</div>
-          <h4 class="title">Software Developer</h4>
-          <div class="dates">May – August 2019</div>
-          <h4 class="title">Software Development Intern</h4>
-          <div class="dates">May – August 2018</div>
+        <li class="job">
+          <div class="title">
+            <strong>6 Degrees Health</strong> · Portland, Oregon
+          </div>
+          <div class="subtitle">
+            <strong>Software Developer</strong>, May – August 2019
+          </div>
+          <div class="subtitle">
+            <strong>Software Development Intern</strong>, May – August 2018
+          </div>
           <ul>
             <li>Developed the redesigned MediVI healthcare cost analytics
               platform from scratch. At the time there was no comparable tool on
@@ -246,11 +264,13 @@
             <li>Trained 3 new developers and mentored projects.</li>
           </ul>
         </li>
-        <li class="employment">
-          <h3 class="employer">EndFirst</h3>
-          <div class="location">Portland, Oregon</div>
-          <h4 class="title">Web Development Intern</h4>
-          <div class="dates">Summers 2015 and 2016</div>
+        <li class="job">
+          <div class="title">
+            <strong>EndFirst</strong> · Portland, Oregon
+          </div>
+          <div class="subtitle">
+            <strong>Web Development Intern</strong>, Summers 2015 and 2016
+          </div>
           <p>Developed front-end web applications in TypeScript/Angular,
             including a document manager and scheduler.</p>
         </li>
@@ -268,9 +288,10 @@
             learn compiler techniques.</p>
           <ul>
             <li>
-              <h4><a href="https://github.com/thaliaarchi/lazy-wspace">lazy-wspace</a>
+              <strong class="title">
+                <a href="https://github.com/thaliaarchi/lazy-wspace">lazy-wspace</a>
                 and <a href="https://github.com/thaliaarchi/nebula">Nebula</a>
-                compilers</h4>
+                compilers</strong>
               <p>Optimizing compilers in Rust and Go with custom-built
                 intermediate representations. They have similar goals, but
                 different approaches.</p>
@@ -290,8 +311,9 @@
               </ul>
             </li>
             <li>
-              <h4><a href="https://github.com/thaliaarchi/omniwsa">omniwsa</a>
-                assembler</h4>
+              <strong class="title">
+                <a href="https://github.com/thaliaarchi/omniwsa">omniwsa</a>
+                assembler</strong>
               <p>A language front-end and code formatter, which unifies many
                 incompatible dialects into one interoperable concrete syntax
                 tree. It has excellent error recovery and every program parses
@@ -303,8 +325,8 @@
           <h3>Formal verification</h3>
           <ul>
             <li>
-              <h4><a href="https://github.com/thaliaarchi/mersenne-untwist">
-                Mersenne Untwist</a></h4>
+              <strong class="title"><a href="https://github.com/thaliaarchi/mersenne-untwist">
+                Mersenne Untwist</a></strong>
               <p>A reverse implementation of the MT19937 Mersenne Twister
                 pseudorandom number generator, that can recover the seed in some
                 cases, when given the desired outputs.</p>
@@ -320,20 +342,23 @@
               </ul>
             </li>
             <li>
-              <h4><a href="https://github.com/thaliaarchi/bfcoq">bfcoq</a> and
-                <a href="https://github.com/thaliaarchi/wscoq">wscoq</a></h4>
+              <strong class="title">
+                <a href="https://github.com/thaliaarchi/bfcoq">bfcoq</a> and
+                <a href="https://github.com/thaliaarchi/wscoq">wscoq</a></strong>
               <p>Small compilers formalized in Coq, that progressively transform
                 through levels of intermediate languages. Used components from
                 the CompCert compiler.</p>
             </li>
             <li>
-              <h4><a href="https://github.com/thaliaarchi/recross-coq">Recross</a></h4>
+              <strong class="title"><a href="https://github.com/thaliaarchi/recross-coq">
+                Recross</a></strong>
               <p>Verified regular expression engine in Coq, that has
                 intersection. Includes a generic interval set and many rewrites
                 with morphisms.</p>
             </li>
             <li>
-              <h4><a href="https://github.com/thaliaarchi/bdd-rust">bdd-rust</a></h4>
+              <strong class="title"><a href="https://github.com/thaliaarchi/bdd-rust">
+                bdd-rust</a></strong>
               <p>An efficient library in Rust for binary decision diagrams with
                 bit blasting and an ergonomic API.</p>
             </li>
@@ -345,8 +370,8 @@
             software.</p>
           <ul>
             <li>
-              <h4><a href="https://github.com/thaliaarchi/regexp-museum">
-                The Regexp Museum</a></h4>
+              <strong class="title"><a href="https://github.com/thaliaarchi/regexp-museum">
+                The Regexp Museum</a></strong>
               <p>Researching the history and evolution of the syntax, semantics,
                 and code in regular expression engines.</p>
               <ul>
@@ -360,8 +385,8 @@
               </ul>
             </li>
             <li>
-              <h4><a href="https://github.com/thaliaarchi/git-transform-repo">
-                git-transform-repo</a></h4>
+              <strong class="title"><a href="https://github.com/thaliaarchi/git-transform-repo">
+                git-transform-repo</a></strong>
               <p>Library in Rust to manipulate Git repositories efficiently as
                 streams of data and metadata.</p>
               <ul>
@@ -372,8 +397,8 @@
               </ul>
             </li>
             <li>
-              <h4><a href="https://github.com/wspace/corpus">
-                The Whitespace Corpus</a></h4>
+              <strong class="title"><a href="https://github.com/wspace/corpus">
+                The Whitespace Corpus</a></strong>
               <p>Collected 368 interpreters, compilers, and assemblers for the
                 Whitespace programming language, implemented in 41 programming
                 languages, and engineered infrastructure to build and run every
