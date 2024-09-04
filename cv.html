@@ -34,6 +34,21 @@
       color: #333;
       text-decoration: underline;
     }
+    nav {
+      font-size: 0.8em;
+      line-height: 1.8em;
+    }
+    nav ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    nav ul ul {
+      list-style-type: circle;
+      padding-left: 2em;
+    }
+    nav a {
+      color: #333;
+    }
     #contact ul {
       list-style-type: none;
       padding: 0;
@@ -58,6 +73,23 @@
   </style>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#presentations">Presentations</a></li>
+      <li><a href="#writing">Writing</a></li>
+      <li><a href="#employment">Professional experience</a></li>
+      <li>
+        <a href="#projects">Projects</a>
+        <ul>
+          <li><a href="#compiler-projects">Compiler infrastructure</a></li>
+          <li><a href="#verification-projects">Formal verification</a></li>
+          <li><a href="#history-projects">Software history</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
   <article>
     <h1>Thalia Archibald</h1>
 
@@ -73,6 +105,7 @@
     </section>
 
     <section>
+      <a name="education"></a>
       <h2>Education</h2>
       <div class="title large">
         <strong>Brigham Young University</strong> · Provo, Utah
@@ -99,6 +132,7 @@
     </section>
 
     <section>
+      <a name="presentations"></a>
       <h2>Presentations</h2>
       <ul class="short-items">
         <li>
@@ -168,6 +202,7 @@
     </section>
 
     <section>
+      <a name="writing"></a>
       <h2>Writing</h2>
       <ul class="short-items">
         <li>
@@ -192,6 +227,7 @@
     </section>
 
     <section>
+      <a name="employment"></a>
       <h2>Professional Experience</h2>
       <ul class="long-items">
         <li>
@@ -294,6 +330,7 @@
     </section>
 
     <section>
+      <a name="projects"></a>
       <h2>Projects</h2>
       <p>I learn by building and enjoy implementing foundational systems
         software. My tools of choice are Rust and Coq. All of these projects and
@@ -301,6 +338,7 @@
         <a href="https://github.com/thaliaarchi">thaliaarchi</a>.</p>
       <ul class="long-items">
         <li>
+          <a name="compiler-projects"></a>
           <h3>Compiler infrastructure</h3>
           <p>Building compiler infrastructure, particularly in the mid-end, to
             learn compiler techniques.</p>
@@ -344,6 +382,7 @@
           </ul>
         </li>
         <li>
+          <a name="verification-projects"></a>
           <h3>Formal verification</h3>
           <ul class="long-items">
             <li>
@@ -395,6 +434,7 @@
           </ul>
         </li>
         <li>
+          <a name="history-projects"></a>
           <h3>Software history</h3>
           <p>The history of software inspires me, and I work to archive old
             software.</p>
