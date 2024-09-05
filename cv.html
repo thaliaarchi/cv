@@ -35,26 +35,24 @@
       text-decoration: underline;
     }
     nav {
+      position: fixed;
       font-size: 0.8em;
-      line-height: 1.8em;
+      line-height: 2.2em;
     }
     nav ul {
       list-style-type: none;
       padding-left: 0;
     }
     nav ul ul {
-      list-style-type: circle;
-      padding-left: 2em;
+      padding-left: 1.5em;
     }
     nav a {
       color: #333;
     }
-    #contact ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    #contact li:not(:last-child) {
-      margin-bottom: 5px;
+    article {
+      margin: 32px 256px 48px;
+      max-width: 1280px;
+      min-width: 0;
     }
     .long-items {
       list-style-type: none;
@@ -92,13 +90,11 @@
 
   <article>
     <h1>Thalia Archibald</h1>
-
-    <section id="contact">
-      <ul>
-        <li><a href="mailto:thalia@archibald.dev">thalia@archibald.dev</a></li>
-        <li>GitHub: <a href="https://github.com/thaliaarchi">thaliaarchi</a></li>
-      </ul>
-    </section>
+    <p>
+      <a href="mailto:thalia@archibald.dev">thalia@archibald.dev</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/thaliaarchi">github.com/thaliaarchi</a>
+    </p>
 
     <section>
       <h2>Summary</h2>
@@ -119,7 +115,8 @@
       </div>
       <ul class="details">
         <li>Primarily studied in programming languages and systems software,
-          mentored by Kimball Germane.</li>
+          mentored by <a href="https://kimball.germane.net/">Kimball
+          Germane</a>.</li>
         <li>Teaching assistant for CS 630 Programming Language System Models
           (graduate-level), CS 430 Software Foundations (formalized software in
           Coq), CS 236 Discrete Mathematics (C++), and CS 235 Data Structures
