@@ -26,12 +26,15 @@
     .subtitle em, em.subtitle {
       font-weight: 500;
     }
+    .title {
+      margin-bottom: 0.2em;
+    }
     a {
       color: #269;
       text-decoration: none;
     }
     a:hover {
-      color: #333;
+      color: #000;
       text-decoration: underline;
     }
     nav {
@@ -54,19 +57,22 @@
       max-width: 1280px;
       min-width: 0;
     }
-    .long-items {
+    ul.long-items {
       list-style-type: none;
+      padding-left: 1.5em;
     }
-    .short-items, .details {
+    ul.short-items, .details ul {
       list-style-type: disc;
+      margin-top: 0.5em;
+      padding-left: 2.5em;
     }
     .details {
       margin-top: 0.25em;
       margin-bottom: 1em;
     }
     p {
-      margin-block-start: 0.25em;
-      margin-block-end: 0.5em;
+      margin-top: 0.3em;
+      margin-bottom: 0.5em;
     }
   </style>
 </head>
@@ -103,28 +109,35 @@
     <section>
       <a name="education"></a>
       <h2>Education</h2>
-      <div class="title large">
-        <strong>Brigham Young University</strong> · Provo, Utah
-      </div>
-      <div class="subtitle">
-        <em>Bachelor of Science in Computer Science</em>,
-        September 2017 – June 2023
-      </div>
-      <div class="subtitle">
-        <em>Minor in German</em>
-      </div>
-      <ul class="details">
-        <li>Primarily studied in programming languages and systems software,
-          mentored by <a href="https://kimball.germane.net/">Kimball
-          Germane</a>.</li>
-        <li>Teaching assistant for CS 630 Programming Language System Models
-          (graduate-level), CS 430 Software Foundations (formalized software in
-          Coq), CS 236 Discrete Mathematics (C++), and CS 235 Data Structures
-          (C++).</li>
-        <li>Achieved CEFR C1 “advanced” level proficiency in German.</li>
-        <li>Actively volunteered in leadership of Cougar Pride Center,
-          coordinating events and advocating for rights for queer students.</li>
-        <li>Won honorable mention at the 2023 YHack for my compiler.</li>
+      <ul class="long-items">
+        <li>
+          <div class="title large">
+            <strong>Brigham Young University</strong> · Provo, Utah
+          </div>
+          <div class="subtitle">
+            <em>Bachelor of Science in Computer Science</em>,
+            September 2017 – June 2023
+          </div>
+          <div class="subtitle">
+            <em>Minor in German</em>
+          </div>
+          <div class="details">
+            <ul>
+              <li>Primarily studied in programming languages and systems
+                software, mentored by <a href="https://kimball.germane.net/">
+                Kimball Germane</a>.</li>
+              <li>Teaching assistant for CS 630 Programming Language System
+                Models (graduate-level), CS 430 Software Foundations (formalized
+                software in Coq), CS 236 Discrete Mathematics (C++), and CS 235
+                Data Structures (C++).</li>
+              <li>Achieved CEFR C1 “advanced” level proficiency in German.</li>
+              <li>Actively volunteered in leadership of Cougar Pride Center,
+                coordinating events and advocating for rights for queer
+                students.</li>
+              <li>Won honorable mention at the 2023 YHack for my compiler.</li>
+            </ul>
+          </div>
+        </li>
       </ul>
     </section>
 
