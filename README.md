@@ -6,7 +6,7 @@ I am applying to PhD programs in programming languages and systems software.
 
 Its design is intended to resemble a paper document, precise, with understated
 simplicity, and is minimal in implementation. No JavaScript, no bloat. No code
-generation; just HTML and inline CSS. It is inconspicuously responsive and
+generation; just HTML with embedded CSS. It is inconspicuously responsive and
 adapts for printing, but it doesn't look like a résumé for web development. It
 uses my favorite humanist typeface, Fira Sans, which has subtle flourishes.
 
