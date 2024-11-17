@@ -1,6 +1,6 @@
 # Thalia Archibald's CV
 
-This is my curriculum vitae, viewable at <https://cv.thalia.dev/>.
+This is my curriculum vitæ, viewable at <https://cv.thalia.dev/>.
 
 I am applying to PhD programs in programming languages and systems software.
 
