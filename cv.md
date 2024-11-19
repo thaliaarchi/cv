@@ -24,9 +24,9 @@ effective with many programming languages, including Rust, Coq, Go, and C.
   - Teaching assistant for CS 630 Programming Language System Models
     (graduate-level), CS 430 Software Foundations (formalized software in Coq),
     CS 236 Discrete Mathematics (C++), and CS 235 Data Structures (C++).
-  - Achieved CEFR C1 “advanced” level proficiency in German.
-  - Actively volunteered in the leadership of Cougar Pride Center, coordinating
-    events and advocating for rights for queer students.
+  - Achieved CEFR C1 “advanced” proficiency in German.
+  - Leadership role in Cougar Pride Center, advocating for queer students and
+    coordinating events.
   - Won honorable mention at the 2023 YHack for my compiler.
 
 ## Presentations
