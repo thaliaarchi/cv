@@ -4,12 +4,12 @@
 
 ## Summary
 
-I am applying to PhD programs in programming languages and systems software.
-
-In particular, program transformation and analysis interest me, including
-compiler mid-end design, rewrite rules, and verifying correctness. I have built
-multiple compilers and worked professionally on the GraalVM compiler. I am
-effective with many programming languages, including Rust, Coq, Go, and C.
+I am applying to PhD programs in programming languages and systems software,
+with a focus on program transformation, compiler optimization, and formal
+verification. My goal is to advance research in composable, verifiable, and
+scalable compiler infrastructures. I have built several compilers, worked
+professionally on the GraalVM compiler, and am proficient in many languages
+including Rust, Coq, Go, and C.
 
 ## Education
 
