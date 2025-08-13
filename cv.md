@@ -4,14 +4,20 @@
 
 ## Summary
 
-I am applying to PhD programs in programming languages and systems software,
-with a focus on program transformation, compiler optimization, and formal
-verification. My goal is to advance research in composable, verifiable, and
-scalable compiler infrastructures. I have built several compilers, worked
-professionally on the GraalVM compiler, and am proficient in many languages
-including Rust, Coq, Go, and C.
+I am starting my PhD in programming languages and systems software, with a focus
+on program transformation, compiler optimization, and formal verification. My
+goal is to advance research in composable, verifiable, and scalable compiler
+infrastructures. I have built several compilers, worked professionally on the
+GraalVM compiler, and am proficient in many languages including Rust, C, Coq,
+and Go.
 
 ## Education
+
+- **University of Utah** · Salt Lake City, Utah
+
+  *PhD in Computer Science*, August 2025 – present
+
+  - Advised by [John Regehr](https://users.cs.utah.edu/~regehr/).
 
 - **Brigham Young University** · Provo, Utah
 
