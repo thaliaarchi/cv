@@ -4,12 +4,12 @@
 
 ## Summary
 
-I am starting my PhD in programming languages and systems software, with a focus
-on program transformation, compiler optimization, and formal verification. My
-goal is to advance research in composable, verifiable, and scalable compiler
-infrastructures. I have built several compilers, worked professionally on the
-GraalVM compiler, and am proficient in many languages including Rust, C, Coq,
-and Go.
+I am a first-year PhD student researching compiler verification with John Regehr
+at the University of Utah. My research interests include program
+transformations, compiler IR design, and formal verification. I aim to advance
+research in composable, verifiable, and scalable compiler infrastructures. I
+have built several compilers, worked professionally on the GraalVM compiler, and
+am proficient in many languages including Rust, C, Coq, and Go.
 
 ## Education
 
@@ -18,6 +18,8 @@ and Go.
   *PhD in Computer Science*, August 2025 – present
 
   - Advised by [John Regehr](https://users.cs.utah.edu/~regehr/).
+  - Ongoing research to extend [Alive2](https://alive2.llvm.org/ce/), a
+    translation validator for LLVM, to reason about loops without unrolling.
 
 - **Brigham Young University** · Provo, Utah
 
@@ -219,12 +221,20 @@ techniques.
 
 ### Software history
 
-The history of software inspires me, and I archive old software on the side.
+The history of software inspires me, and I archive and study influential old
+software on the side.
+
+- [UNIX History at Utah](https://github.com/thaliaarchi/unix-history)
+
+  Researching the early use of UNIX at the University of Utah in 1974 to tell
+  the story of our [recently found UNIX V4 tape](https://www.theregister.com/2025/11/07/unix_fourth_edition_tape_rediscovered/),
+  the only surviving copy of the first public version of this influential
+  operating system.
 
 - **[The Regexp Museum](https://github.com/thaliaarchi/regexp-museum)**
 
-  Researching the history and evolution of the syntax, semantics, and code in
-  regular expression engines.
+  Researching the history and evolution of the syntax, semantics, and code
+  across regular expression engines.
 
   - Discovered novel evolutionary relationships, including tracing the
     development of the original Perl regexp a decade earlier through a
