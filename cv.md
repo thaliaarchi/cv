@@ -39,40 +39,70 @@ am proficient in many languages including Rust, C, Coq, and Go.
 
 ## Presentations
 
+- *Upcoming:* **UNIX V4: History and Recovery**,
+  July 2026 \
+  SIGGRAPH 2026
+
+  Talk on the recent recovery of UNIX V4, its history, and
+  connections to pioneering computer graphics research at the
+  University of Utah in the '70s.</p>
+
+- *Upcoming:* **UNIX V4: History and Recovery**,
+  2 May 2026 \
+  Vintage Computer Festival Pacific Northwest
+
+  Talk on the recent recovery of UNIX V4 and its history, and demo
+  showing software and kernel hacking with ed on V4 and V7 with a
+  virtual terminal and teletype.
+
+- **[Retrocomputing: Talk and vintage hardware demo](https://discuss.systems/@thalia/116281783388964930)**,
+  26 March 2026 \
+  GradSAC, Kahlert School of Computing, University of Utah
+
+  Talk on our recovery of UNIX V4 and its history and interactive
+  demos of my vintage '70s and '80s hardware, including paper
+  teletypes and home computers.
+
 - **[Dependent Types: The Calculus of Constructions](https://web.archive.org/web/20230528061056/https://faculty.cs.byu.edu/~kimball/630/dependent-types.html)**,
-  7 and 9 March 2023
+  7 and 9 March 2023 \
+  Programming Language System Models, BYU
 
   Introduction to dependent types in Coq, including demonstrations of a
   [strongly typed `printf`](https://github.com/thaliaarchi/pl-papers/blob/main/coc/printf.v)
   in four styles and a [vector with dependent length](https://github.com/thaliaarchi/pl-papers/blob/main/coc/vec.v).
 
 - **[Collapsing Towers of Interpreters](https://github.com/thaliaarchi/pl-papers/tree/main/cti)**,
-  24 and 26 January 2023
+  24 and 26 January 2023 \
+  Programming Language System Models, BYU
 
-  Demonstration of four implementations by me of the languages in “Collapsing
-  Towers of Interpreters” (Amin and Rompf, 2018) in Coq and Rust, and discussion
-  of partial evaluation and trusting trust (Thompson, 1984).
+  Demonstration of my four implementations of “Collapsing Towers of
+  Interpreters” (Amin and Rompf, 2018) in Coq and Rust, and discussion of
+  partial evaluation and trusting trust (Thompson, 1984).
 
-- **A Brief History of Software Documentation**, 4 October 2022
+- **A Brief History of Software Documentation**, 4 October 2022 \
+  Technical Communication, BYU
 
   Tour of software documentation via comments in the Apollo Guidance Computer
   source, literate programming in TeX, and documentation generation in Rust.
 
 - **[Incremental Computation with Adapton](https://github.com/thaliaarchi/notes/tree/main/logic/adapton)**,
-  19 July 2022
+  19 July 2022 \
+  Programming Languages Meetup, BYU
 
   Review of demand-driven incremental computation with Adapton (Hammer et al.,
   2014) and minimal versions, miniAdapton and microAdapton (Fisher et al.,
   2016).
 
 - **[Futamura Projections and Partial Evaluation](https://github.com/thaliaarchi/notes/blob/main/topics/futamura.md)**,
-  31 March 2022
+  31 March 2022 \
+  Advanced Topics in Programming Languages, BYU
 
   Introduction to partial evaluation of compilers (Futamura, 1971) and live
   coding, applying the first Futamura projection to a simple language.
 
 - **[Architecture of LLVM and tutorial](https://github.com/thaliaarchi/notes/blob/main/compilers/llvm/presentation_outline.md)**,
-  8 and 10 March 2022
+  8 and 10 March 2022 \
+  Advanced Topics in Programming Languages, BYU
 
   Overview of the architecture and design of LLVM, including static
   single-assignment form and the tiered architecture, and walkthrough of
@@ -94,8 +124,7 @@ am proficient in many languages including Rust, C, Coq, and Go.
 
 ## Professional Experience
 
-- **Oracle Labs** · Zürich, Switzerland
-
+- **Oracle Labs** · Zürich, Switzerland \
   *Research Intern*, July – November 2021
 
   - Implemented an optimization phase in the core of the GraalVM compiler. It
@@ -109,8 +138,7 @@ am proficient in many languages including Rust, C, Coq, and Go.
   - Became one of 5 people who understands the complex infrastructure for loops
     in Graal.
 
-- **GrammaTech** · Remote
-
+- **GrammaTech** · Remote \
   *Software Engineering Intern*, April – August 2020
 
   - Built static analyses for CodeSonar, which enforce naming convention styles
@@ -123,17 +151,14 @@ am proficient in many languages including Rust, C, Coq, and Go.
   - Effectively came up to speed in their 30-million-line codebase, despite
     unexpected remote mentorship due to COVID.
 
-- **Mobius Labs** · Berlin, Germany
-
+- **Mobius Labs** · Berlin, Germany \
   *Software Engineering Intern*, January – March 2020
 
   Worked as part of a study abroad for my German minor. Developed an interactive
   web app showcasing the startup's computer vision SDK.
 
-- **6 Degrees Health** · Portland, Oregon
-
-  *Software Developer*, May – August 2019
-
+- **6 Degrees Health** · Portland, Oregon \
+  *Software Developer*, May – August 2019 \
   *Software Development Intern*, May – August 2018
 
   - Developed the redesigned MediVI healthcare cost analytics platform from
@@ -147,8 +172,7 @@ am proficient in many languages including Rust, C, Coq, and Go.
     in TypeScript/React and Go.
   - Trained 3 new developers and mentored projects.
 
-- **EndFirst** · Portland, Oregon
-
+- **EndFirst** · Portland, Oregon \
   *Web Development Intern*, Summers 2015 and 2016
 
   Developed front-end web applications in TypeScript/Angular, including a
