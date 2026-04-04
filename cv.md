@@ -39,29 +39,36 @@ am proficient in many languages including Rust, C, Coq, and Go.
 
 ## Presentations
 
-- *Upcoming:* **UNIX V4: History and Recovery**,
+- *Upcoming:* **UNIX V4 and the Utah Teapot**,
   July 2026 \
   SIGGRAPH 2026
 
-  Talk on the recent recovery of UNIX V4, its history, and
-  connections to pioneering computer graphics research at the
-  University of Utah in the '70s.</p>
+  Talk on the recent recovery of UNIX V4, its history, and connections to
+  foundational computer graphics research at the University of Utah in the
+  '70s.
 
-- *Upcoming:* **UNIX V4: History and Recovery**,
+- *Upcoming:* **[UNIX V4: History and Recovery](https://lsd.ucsc.edu/lsd-seminar/2026sp/#may-22)**,
+  22 May 2026 \
+  Languages, Systems, and Data Seminar, UC Santa Cruz
+
+  Talk on the recent recovery of UNIX V4 and its history, and demo showing
+  software and kernel hacking with `ed` on V4 and V7 with a virtual terminal and
+  printing teletype.
+
+- *Upcoming:* **[UNIX V4: History and Recovery](https://vcfpnw.org)**,
   2 May 2026 \
   Vintage Computer Festival Pacific Northwest
 
-  Talk on the recent recovery of UNIX V4 and its history, and demo
-  showing software and kernel hacking with ed on V4 and V7 with a
-  virtual terminal and teletype.
+  Talk on the recent recovery of UNIX V4 and its history, and demo showing
+  software and kernel hacking with `ed` on V4 and V7 with a virtual terminal and
+  printing teletype.
 
 - **[Retrocomputing: Talk and vintage hardware demo](https://discuss.systems/@thalia/116281783388964930)**,
   26 March 2026 \
   GradSAC, Kahlert School of Computing, University of Utah
 
-  Talk on our recovery of UNIX V4 and its history and interactive
-  demos of my vintage '70s and '80s hardware, including paper
-  teletypes and home computers.
+  Talk on our recovery of UNIX V4 and its history and interactive demos of my
+  vintage '70s and '80s hardware, including paper teletypes and home computers.
 
 - **[Dependent Types: The Calculus of Constructions](https://web.archive.org/web/20230528061056/https://faculty.cs.byu.edu/~kimball/630/dependent-types.html)**,
   7 and 9 March 2023 \
