@@ -89,8 +89,9 @@ am proficient in many languages including Rust, C, Coq, and Go.
 - **A Brief History of Software Documentation**, 4 October 2022 \
   Technical Communication, BYU
 
-  Tour of software documentation via comments in the Apollo Guidance Computer
-  source, literate programming in TeX, and documentation generation in Rust.
+  Tour of software documentation via [comments](https://discuss.systems/@thalia/116399390152925820)
+  in the Apollo Guidance Computer source, literate programming in TeX, and
+  documentation generation in Rust.
 
 - **[Incremental Computation with Adapton](https://github.com/thaliaarchi/notes/tree/main/logic/adapton)**,
   19 July 2022 \
