@@ -4,8 +4,8 @@
 
 ## Summary
 
-I am a first-year PhD student researching compiler verification with John Regehr
-at the University of Utah. My research interests include program
+I am a second-year PhD student researching compiler verification with John
+Regehr at the University of Utah. My research interests include program
 transformations, compiler IR design, and formal verification. I aim to advance
 research in composable, verifiable, and scalable compiler infrastructures. I
 have built several compilers, worked professionally on the GraalVM compiler, and
@@ -27,7 +27,7 @@ am proficient in many languages including Rust, C, Coq, and Go.
 
   *Minor in German*
 
-  - Primarily studied in programming languages and systems software, mentored by
+  - Studied programming language theory and systems software, mentored by
     [Kimball Germane](https://kimball.germane.net/).
   - Teaching assistant for CS 630 Programming Language System Models
     (graduate-level), CS 430 Software Foundations (formalized software in Coq),
