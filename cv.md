@@ -71,66 +71,6 @@ am proficient in many languages including Rust, C, Coq, and Go.
   Talk on our recovery of UNIX V4 and its history and interactive demos of my
   vintage '70s and '80s hardware, including paper teletypes and home computers.
 
-- **[Dependent Types: The Calculus of Constructions](https://web.archive.org/web/20230528061056/https://faculty.cs.byu.edu/~kimball/630/dependent-types.html)**,
-  7 and 9 March 2023 \
-  Programming Language System Models, BYU
-
-  Introduction to dependent types in Coq, including demonstrations of a
-  [strongly typed `printf`](https://github.com/thaliaarchi/pl-papers/blob/main/coc/printf.v)
-  in four styles and a [vector with dependent length](https://github.com/thaliaarchi/pl-papers/blob/main/coc/vec.v).
-
-- **[Collapsing Towers of Interpreters](https://github.com/thaliaarchi/pl-papers/tree/main/cti)**,
-  24 and 26 January 2023 \
-  Programming Language System Models, BYU
-
-  Demonstration of my four implementations of “Collapsing Towers of
-  Interpreters” (Amin and Rompf, 2018) in Coq and Rust, and discussion of
-  partial evaluation and trusting trust (Thompson, 1984).
-
-- **A Brief History of Software Documentation**, 4 October 2022 \
-  Technical Communication, BYU
-
-  Tour of software documentation via [comments](https://discuss.systems/@thalia/116399390152925820)
-  in the Apollo Guidance Computer source, literate programming in TeX, and
-  documentation generation in Rust.
-
-- **[Incremental Computation with Adapton](https://github.com/thaliaarchi/notes/tree/main/logic/adapton)**,
-  19 July 2022 \
-  Programming Languages Meetup, BYU
-
-  Review of demand-driven incremental computation with Adapton (Hammer et al.,
-  2014) and minimal versions, miniAdapton and microAdapton (Fisher et al.,
-  2016).
-
-- **[Futamura Projections and Partial Evaluation](https://github.com/thaliaarchi/notes/blob/main/topics/futamura.md)**,
-  31 March 2022 \
-  Advanced Topics in Programming Languages, BYU
-
-  Introduction to partial evaluation of compilers (Futamura, 1971) and live
-  coding, applying the first Futamura projection to a simple language.
-
-- **[Architecture of LLVM and tutorial](https://github.com/thaliaarchi/notes/blob/main/compilers/llvm/presentation_outline.md)**,
-  8 and 10 March 2022 \
-  Advanced Topics in Programming Languages, BYU
-
-  Overview of the architecture and design of LLVM, including static
-  single-assignment form and the tiered architecture, and walkthrough of
-  building an LLVM front-end, demonstrating how various constructs are lowered.
-
-## Writing
-
-- **[Coq typeclass resolution is Turing-complete](https://thaliaarchi.github.io/coq-turing-typeclass/)**,
-  15 April 2023
-
-  Proof by construction that the typeclass resolver in Coq can perform arbitrary
-  computation while searching for instances.
-
-- **Effects of Compiler Intermediate Representation Design on Ergonomics: A
-  Literature Review** (unpublished), 8 December 2022
-
-  Comparative analysis of intermediate representations in LLVM, MLIR, GraalVM,
-  CompCert, and WebAssembly.
-
 ## Professional Experience
 
 - **Oracle Labs** · Zürich, Switzerland \
@@ -160,12 +100,6 @@ am proficient in many languages including Rust, C, Coq, and Go.
   - Effectively came up to speed in their 30-million-line codebase, despite
     unexpected remote mentorship due to COVID.
 
-- **Mobius Labs** · Berlin, Germany \
-  *Software Engineering Intern*, January – March 2020
-
-  Worked as part of a study abroad for my German minor. Developed an interactive
-  web app showcasing the startup's computer vision SDK.
-
 - **6 Degrees Health** · Portland, Oregon \
   *Software Developer*, May – August 2019 \
   *Software Development Intern*, May – August 2018
@@ -180,12 +114,6 @@ am proficient in many languages including Rust, C, Coq, and Go.
   - Developed many features for the in-house healthcare claims-management system
     in TypeScript/React and Go.
   - Trained 3 new developers and mentored projects.
-
-- **EndFirst** · Portland, Oregon \
-  *Web Development Intern*, Summers 2015 and 2016
-
-  Developed front-end web applications in TypeScript/Angular, including a
-  document manager and scheduler.
 
 ## Projects
 
