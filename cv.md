@@ -39,37 +39,23 @@ am proficient in many languages including Rust, C, Coq, and Go.
 
 ## Presentations
 
-- **[UNIX V4: History and Recovery](https://lrc.cs.dartmouth.edu)**,
-  August 2026 \
-  Low Resource Computing 2026, Dartmouth College
+- **UNIX V4: History and Recovery** / **UNIX V4 and the Utah Teapot**
+  - *[Low Resource Computing](https://lrc.cs.dartmouth.edu)* ·
+    Dartmouth College, 17–19 August 2026
+  - *[SIGGRAPH](https://dl.acm.org/doi/10.1145/3799885.3816010)* ·
+    Los Angeles, CA, 23 July 2026
+  - *[Languages, Systems, and Data Seminar](https://lsd.ucsc.edu/lsd-seminar/2026sp/#may-22)* ·
+    UC Santa Cruz, 22 May 2026
+  - *[Vintage Computer Festival Pacific Northwest](https://vcfpnw.org)* ·
+    Tukwilla, WA, 2 May 2026
+  - *[GradSAC, Kahlert School of Computing](https://discuss.systems/@thalia/116281783388964930)* ·
+    University of Utah, 26 March 2026
 
-- **[UNIX V4 and the Utah Teapot](https://thalia.dev/papers/siggraph26/siggraphfrontiers26-1.pdf)**,
-  23 July 2026 \
-  SIGGRAPH 2026
-
-  Talk on the recent recovery of UNIX V4, its history, and connections to
-  foundational computer graphics research at the University of Utah in the
-  '70s.
-
-- **[UNIX V4: History and Recovery](https://lsd.ucsc.edu/lsd-seminar/2026sp/#may-22)**,
-  22 May 2026 \
-  Languages, Systems, and Data Seminar, UC Santa Cruz
-
-  Talk on the recent recovery of UNIX V4 and its history, and demo showing
-  programming with `ed` using a virtual terminal and printing teletype.
-
-- **[UNIX V4: History and Recovery](https://vcfpnw.org)**,
-  2 May 2026 \
-  Vintage Computer Festival Pacific Northwest
-
-  Talk on the recent recovery of UNIX V4 and its history.
-
-- **[Retrocomputing: Talk and vintage hardware demo](https://discuss.systems/@thalia/116281783388964930)**,
-  26 March 2026 \
-  GradSAC, Kahlert School of Computing, University of Utah
-
-  Talk on our recovery of UNIX V4 and its history and interactive demos of my
-  vintage '70s and '80s hardware, including paper teletypes and home computers.
+  Talk on our recovery of UNIX V4 from a 1974 magnetic tape, the
+  early history of this influential operating system, and this
+  artifact’s connection to foundational computer graphics research at
+  the University of Utah. Some presentations demonstrated period
+  software development with a printing terminal.
 
 ## Professional Experience
 
