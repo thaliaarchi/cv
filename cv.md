@@ -37,28 +37,6 @@ am proficient in many languages including Rust, C, Coq, and Go.
     coordinating events.
   - Won honorable mention at the 2023 YHack for my compiler.
 
-## Presentations
-
-- **UNIX V4: History and Recovery** / **UNIX V4 and the Utah Teapot**
-  - *Computer Graphics Seminar* ·
-    University of Utah, 8 September 2026
-  - *[Low Resource Computing](https://lrc.cs.dartmouth.edu)* ·
-    Dartmouth College, 17–19 August 2026
-  - *[SIGGRAPH](https://dl.acm.org/doi/10.1145/3799885.3816010)* ·
-    Los Angeles, CA, 23 July 2026
-  - *[Languages, Systems, and Data Seminar](https://lsd.ucsc.edu/lsd-seminar/2026sp/#may-22)* ·
-    UC Santa Cruz, 22 May 2026
-  - *[Vintage Computer Festival Pacific Northwest](https://vcfpnw.org)* ·
-    Tukwilla, WA, 2 May 2026
-  - *[GradSAC](https://discuss.systems/@thalia/116281783388964930)* ·
-    University of Utah, 26 March 2026
-
-  Talk on our recovery of UNIX V4 from a 1974 magnetic tape, the
-  early history of this influential operating system, and this
-  artifact’s connection to foundational computer graphics research at
-  the University of Utah. Some presentations demonstrated period
-  software development with a printing terminal.
-
 ## Professional Experience
 
 - **Oracle Labs** · Zürich, Switzerland \
@@ -102,6 +80,28 @@ am proficient in many languages including Rust, C, Coq, and Go.
   - Developed many features for the in-house healthcare claims-management system
     in TypeScript/React and Go.
   - Trained 3 new developers and mentored projects.
+
+## Presentations
+
+- **UNIX V4: History and Recovery** / **UNIX V4 and the Utah Teapot**
+  - *Computer Graphics Seminar* ·
+    University of Utah, 8 September 2026
+  - *[Low Resource Computing](https://lrc.cs.dartmouth.edu)* ·
+    Dartmouth College, 17–19 August 2026
+  - *[SIGGRAPH](https://dl.acm.org/doi/10.1145/3799885.3816010)* ·
+    Los Angeles, CA, 23 July 2026
+  - *[Languages, Systems, and Data Seminar](https://lsd.ucsc.edu/lsd-seminar/2026sp/#may-22)* ·
+    UC Santa Cruz, 22 May 2026
+  - *[Vintage Computer Festival Pacific Northwest](https://vcfpnw.org)* ·
+    Tukwilla, WA, 2 May 2026
+  - *[GradSAC](https://discuss.systems/@thalia/116281783388964930)* ·
+    University of Utah, 26 March 2026
+
+  Talk on our recovery of UNIX V4 from a 1974 magnetic tape, the
+  early history of this influential operating system, and this
+  artifact’s connection to foundational computer graphics research at
+  the University of Utah. Some presentations demonstrated period
+  software development with a printing terminal.
 
 ## Projects
 
