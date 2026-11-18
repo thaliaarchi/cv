@@ -243,16 +243,13 @@
           </div>
           <div class="details">
             <ul>
-              <li>Implemented an optimization phase in the core of the GraalVM
-                compiler. It performs “strip mining” on long-running loops in
-                Java programs, transforming them into nested loops and moving
-                overhead-heavy operations out of the inner loop.</li>
-              <li>This reduces the execution cost of safepoint polling for
-                garbage collection and improves performance with low-pause-time
-                garbage collectors. It also enables further optimizations, such
-                as vectorization, that combine for large speed-ups.</li>
-              <li>Became one of 5 people who understands the complex
-                infrastructure for loops in Graal.</li>
+              <li>Implemented a loop optimization in the GraalVM compiler that
+                improves garbage collection performance.</li>
+              <li>This strip mining optimization transforms long-running loops
+                into nested loops and moves expensive operations like garbage
+                collection safepoints out of the hot inner loop.</li>
+              <li>Unblocked further optimizations, such as vectorization, to
+                combine for large speed-ups.</li>
             </ul>
           </div>
         </li>
@@ -265,17 +262,13 @@
           </div>
           <div class="details">
             <ul>
-              <li>Built static analyses for CodeSonar, which enforce naming
-                convention styles configurably like Clang and flag usage of
-                function-like macros instead of functions in C/C++ code.</li>
-              <li>Implemented a regular expression that expanded to 1100
-                characters, which precisely handles all lexical C++ features
-                before preprocessing.</li>
+              <li>Built C/C++ static analyses for CodeSonar to enforce
+                configurable naming conventions and flag usage of function-like
+                macros.</li>
               <li>Identified cross-compiler differences and undefined behavior,
                 and tested MISRA and C++ standards compliance.</li>
               <li>Effectively came up to speed in their 30-million-line
-                codebase, despite unexpected remote mentorship due to
-                COVID.</li>
+                codebase.</li>
             </ul>
           </div>
         </li>
@@ -291,17 +284,13 @@
           </div>
           <div class="details">
             <ul>
-              <li>Developed the redesigned MediVI healthcare cost analytics
-                platform from scratch. At the time there was no comparable tool
-                on the market and MediVI has since become the industry
-                archetype. It was pivotal to the success of the company: MediVI
-                was used in every sales call, cementing their technology-centric
-                reputation in healthcare pricing, and contributed to their $85
-                million valuation. Even as an intern, I had an oversized impact
-                on this startup.</li>
-              <li>Developed many features for the in-house healthcare
-                claims-management system in TypeScript/React and Go.</li>
-              <li>Trained 3 new developers and mentored projects.</li>
+              <li>Redesigned from scratch the MediVI healthcare analytics
+                platform for price transparency. MediVi was used in every sales
+                call, establishing the company's technology-centric reputation,
+                and became the industry archetype.</li>
+              <li>Developed critical features for their claims-management system
+                in TypeScript/React and Go.</li>
+              <li>Trained 3 developers and mentored projects.</li>
             </ul>
           </div>
         </li>
@@ -401,7 +390,7 @@
             early history of this influential operating system, and this
             artifact’s connection to foundational computer graphics research at
             the University of Utah. Some presentations demonstrated period
-            software development with a printing terminal.</p>
+            software development with UNIX and a printing terminal.</p>
         </li>
       </ul>
     </section>

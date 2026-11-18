@@ -42,44 +42,33 @@ am proficient in many languages including Rust, C, Coq, and Go.
 - **Oracle Labs** · Zürich, Switzerland \
   *Research Intern*, July – November 2021
 
-  - Implemented an optimization phase in the core of the GraalVM compiler. It
-    performs “strip mining” on long-running loops in Java programs, transforming
-    them into nested loops and moving overhead-heavy operations out of the inner
-    loop.
-  - This reduces the execution cost of safepoint polling for garbage collection
-    and improves performance with low-pause-time garbage collectors. It also
-    enables further optimizations, such as vectorization, that combine for large
+  - Implemented a loop optimization in the GraalVM compiler that improves
+    garbage collection performance.
+  - This strip mining optimization transforms long-running loops into nested
+    loops and moves expensive operations like garbage collection safepoints out
+    of the hot inner loop.
+  - Unblocked further optimizations, such as vectorization, to combine for large
     speed-ups.
-  - Became one of 5 people who understands the complex infrastructure for loops
-    in Graal.
 
 - **GrammaTech** · Remote \
   *Software Engineering Intern*, April – August 2020
 
-  - Built static analyses for CodeSonar, which enforce naming convention styles
-    configurably like Clang and flag usage of function-like macros instead of
-    functions in C/C++ code.
-  - Implemented a regular expression that expanded to 1100 characters, which
-    precisely handles all lexical C++ features before preprocessing.
+  - Built C/C++ static analyses for CodeSonar to enforce configurable naming
+    conventions and flag usage of function-like macros.
   - Identified cross-compiler differences and undefined behavior, and tested
     MISRA and C++ standards compliance.
-  - Effectively came up to speed in their 30-million-line codebase, despite
-    unexpected remote mentorship due to COVID.
+  - Effectively came up to speed in their 30-million-line codebase.
 
 - **6 Degrees Health** · Portland, Oregon \
   *Software Developer*, May – August 2019 \
   *Software Development Intern*, May – August 2018
 
-  - Developed the redesigned MediVI healthcare cost analytics platform from
-    scratch. At the time there was no comparable tool on the market and MediVI
-    has since become the industry archetype. It was pivotal to the success of
-    the company: MediVI was used in every sales call, cementing their
-    technology-centric reputation in healthcare pricing, and contributed to
-    their $85 million valuation. Even as an intern, I had an oversized impact on
-    this startup.
-  - Developed many features for the in-house healthcare claims-management system
-    in TypeScript/React and Go.
-  - Trained 3 new developers and mentored projects.
+  - Redesigned from scratch the MediVI healthcare analytics platform for price
+    transparency. MediVi was used in every sales call, establishing the
+    company's technology-centric reputation, and became the industry archetype.
+  - Developed critical features for their claims-management system in
+    TypeScript/React and Go.
+  - Trained 3 developers and mentored projects.
 
 ## Projects
 
@@ -129,4 +118,4 @@ Projects available at [github.com/thaliaarchi](https://github.com/thaliaarchi).
   early history of this influential operating system, and this
   artifact’s connection to foundational computer graphics research at
   the University of Utah. Some presentations demonstrated period
-  software development with a printing terminal.
+  software development with UNIX and a printing terminal.
