@@ -93,9 +93,6 @@
       list-style-type: none;
       padding-left: 0;
     }
-    nav ul ul {
-      padding-left: 1.5em;
-    }
     nav a {
       color: #333;
     }
@@ -160,14 +157,7 @@
       <li><a href="#education">Education</a></li>
       <li><a href="#employment">Professional experience</a></li>
       <li><a href="#presentations">Presentations</a></li>
-      <li>
-        <a href="#projects">Projects</a>
-        <ul>
-          <li><a href="#compiler-projects">Compiler infrastructure</a></li>
-          <li><a href="#verification-projects">Formal verification</a></li>
-          <li><a href="#history-projects">Software history</a></li>
-        </ul>
-      </li>
+      <li><a href="#projects">Projects</a></li>
     </ul>
   </nav>
 
@@ -318,6 +308,65 @@
       </ul>
     </section>
 
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="long-items">
+        <li>
+          <div class="title"><strong>Open source</strong></div>
+          <div class="details"><ul>
+            <li>Contributor to the Rust standard library (60 PRs), jq (4 PRs),
+              and Git (1 patch series).</li>
+          </ul></div>
+        </li>
+        <li>
+          <div class="title"><strong>Compiler infrastructure</strong></div>
+          <div class="details">
+            <ul>
+              <li>Implemented various intermediate representations:
+                sea of nodes [<a href="https://github.com/thaliaarchi/lazy-wspace">lazy-wspace</a>],
+                e-graphs [<a href="https://github.com/thaliaarchi/micro-egg">micro-egg</a>],
+                and static single-assignment form [<a href="https://github.com/thaliaarchi/nebula">Nebula</a>].</li>
+              <li>Implemented loop recurrence recognition and quasi-invariant
+                loop peeling, which optimize cases missed by LLVM
+                [<a href="https://github.com/thaliaarchi/bfrs">bfrs</a>].</li>
+              <li>Developed parser with dynamically extensible syntax and error
+                recovery
+                [<a href="https://github.com/thaliaarchi/omniwsa">omniwsa</a>].</li>
+              <li>Developed LLVM IR front-end
+                [<a href="https://github.com/thaliaarchi/nebula">Nebula</a>].</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="title"><strong>Formal verification</strong></div>
+          <div class="details">
+            <ul>
+              <li>Formalized small compilers in Rocq, proved transformations, and
+                used CompCert libraries
+                [<a href="https://github.com/thaliaarchi/bfcoq">bfcoq</a>, <a href="https://github.com/thaliaarchi/wscoq">wscoq</a>].</li>
+              <li>Reversed MT19937 pseudorandom number generator through
+                cryptanalysis of bitwise operations and solved for seeds with Z3
+                [<a href="https://github.com/thaliaarchi/mersenne-untwist">Mersenne Untwist</a>].</li>
+              <li>Developed solver engine using binary decision diagrams with bit
+                blasting
+                [<a href="https://github.com/thaliaarchi/bdd-rust">bdd-rust</a>].</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="title"><strong>DevOps</strong></div>
+          <div class="details">
+            <ul>
+              <li>Maintained index of 371 interpreters, compilers, and assemblers with each
+                built using Docker [<a href="https://github.com/wspace/corpus">The Whitespace Corpus</a>].</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <p>Projects available at <a href="https://github.com/thaliaarchi">
+        github.com/thaliaarchi</a>.</p>
+    </section>
+
     <section id="presentations">
       <h2>Presentations</h2>
       <ul class="short-items">
@@ -353,171 +402,6 @@
             artifact’s connection to foundational computer graphics research at
             the University of Utah. Some presentations demonstrated period
             software development with a printing terminal.</p>
-        </li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>I learn by building and enjoy implementing foundational systems
-        software. My tools of choice are Rust and Coq. All of these projects and
-        others are published on my GitHub profile,
-        <a href="https://github.com/thaliaarchi">thaliaarchi</a>.</p>
-      <ul class="long-items">
-        <li id="compiler-projects">
-          <h3>Compiler infrastructure</h3>
-          <p>Building compiler infrastructure, particularly in the mid-end, to
-            learn compiler techniques.</p>
-          <ul class="long-items">
-            <li>
-              <strong class="title">
-                <a href="https://github.com/thaliaarchi/lazy-wspace">lazy-wspace</a>
-                and <a href="https://github.com/thaliaarchi/nebula">Nebula</a>
-                compilers</strong>
-              <div class="details">
-                <p>Optimizing compilers in Rust and Go with custom-built
-                  intermediate representations. They have similar goals, but
-                  different approaches.</p>
-                <ul>
-                  <li>Implemented various intermediate representations: sea of
-                    nodes like HotSpot and Graal (lazy-wspace) and static
-                    single-assignment form with basic blocks like LLVM
-                    (Nebula).</li>
-                  <li>Converted a stack-oriented model to registers by
-                    abstractly interpreting dynamic stack operations and
-                    statically detecting underflow.</li>
-                  <li>Integrated with LLVM by generating LLVM IR (Nebula).</li>
-                  <li>Built an arena-based IR inspired by Cranelift with global
-                    value numbering (lazy-wspace).</li>
-                  <li>Implemented constant folding and many peephole
-                    optimizations for arithmetic and bitwise operations.</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <strong class="title">
-                <a href="https://github.com/thaliaarchi/omniwsa">omniwsa</a>
-                assembler</strong>
-              <div class="details">
-                <p>A language front-end and code formatter, which unifies many
-                  incompatible dialects into one interoperable concrete syntax
-                  tree. It has excellent error recovery and every program parses
-                  to a syntax tree.</p>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li id="verification-projects">
-          <h3>Formal verification</h3>
-          <ul class="long-items">
-            <li>
-              <strong class="title"><a href="https://github.com/thaliaarchi/mersenne-untwist">
-                Mersenne Untwist</a></strong>
-              <div class="details">
-                <p>A reverse implementation of the MT19937 Mersenne Twister
-                  pseudorandom number generator, that can recover the seed in
-                  some cases, when given the desired outputs.</p>
-                <ul>
-                  <li>Produced a closed-form reverse implementation that is just
-                    as fast as forwards, through cryptanalysis of the bitwise
-                    operations and value dependencies.</li>
-                  <li>Implemented an abstract version using Z3, which solves for
-                    seeds that produce the bits you care about.</li>
-                  <li>Developed a high-level Rust API for Z3, that is easier to
-                    use than the de facto bindings and has stricter static
-                    types.</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <strong class="title">
-                <a href="https://github.com/thaliaarchi/bfcoq">bfcoq</a> and
-                <a href="https://github.com/thaliaarchi/wscoq">wscoq</a></strong>
-              <div class="details">
-                <p>Small compilers formalized in Coq, that progressively
-                  transform through levels of intermediate languages. Used
-                  components from the CompCert compiler.</p>
-              </div>
-            </li>
-            <li>
-              <strong class="title"><a href="https://github.com/thaliaarchi/recross-coq">
-                Recross</a></strong>
-              <div class="details">
-                <p>Verified regular expression engine in Coq, that has
-                  intersection. Includes a generic interval set and many
-                  rewrites with morphisms.</p>
-              </div>
-            </li>
-            <li>
-              <strong class="title"><a href="https://github.com/thaliaarchi/bdd-rust">
-                bdd-rust</a></strong>
-              <div class="details">
-                <p>An efficient library in Rust for binary decision diagrams
-                  with bit blasting and an ergonomic API.</p>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li id="history-projects">
-          <h3>Software history</h3>
-          <p>The history of software inspires me, and I archive and study
-            influential old software on the side.</p>
-          <ul class="long-items">
-            <li>
-              <strong class="title"><a href="https://github.com/thaliaarchi/unix-history">
-                UNIX History at Utah</a></strong>
-              <div class="details">
-                <p>Researching the early use of UNIX at the University of Utah
-                  in 1974 to tell the story of our <a href="https://www.theregister.com/2025/11/07/unix_fourth_edition_tape_rediscovered/">
-                  recently found UNIX V4 tape</a>, the only surviving copy of
-                  the first public version of this influential operating
-                  system.</p>
-              </div>
-            </li>
-            <li>
-              <strong class="title"><a href="https://github.com/thaliaarchi/regexp-museum">
-                The Regexp Museum</a></strong>
-              <div class="details">
-                <p>Researching the history and evolution of the syntax,
-                  semantics, and code across regular expression engines.</p>
-                <ul>
-                  <li>Discovered novel evolutionary relationships, including
-                    tracing the development of the original Perl regexp a decade
-                    earlier through a newsreader, an old Emacs, and UNIX
-                    <code>grep</code> and <code>ed</code>.</li>
-                  <li>Cataloged around 100 regular expression
-                    implementations.</li>
-                  <li>Archived and made usable many old, obscure engines whose
-                    influence had been forgotten.</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <strong class="title"><a href="https://github.com/thaliaarchi/git-transform-repo">
-                git-transform-repo</a></strong>
-              <div class="details">
-                <p>Library in Rust to manipulate Git repositories efficiently as
-                  streams of data and metadata.</p>
-                <ul>
-                  <li>Zero-copy, streamed parser with excellent error reporting.
-                    Allocations are performed lazily, when parsed values need to
-                    be retained.</li>
-                  <li>Contributed patches upstream to Git to harden
-                    parsing.</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <strong class="title"><a href="https://github.com/wspace/corpus">
-                The Whitespace Corpus</a></strong>
-              <div class="details">
-                <p>Collected 368 interpreters, compilers, and assemblers for the
-                  Whitespace programming language, implemented in 41 programming
-                  languages, and engineered infrastructure to build and run
-                  every project automatically with Docker.</p>
-              </div>
-            </li>
-          </ul>
         </li>
       </ul>
     </section>
