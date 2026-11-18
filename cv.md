@@ -27,15 +27,13 @@ am proficient in many languages including Rust, C, Coq, and Go.
 
   *Minor in German*
 
-  - Studied programming language theory and systems software, mentored by
+  - Studied programming language theory and systems software, advised by
     [Kimball Germane](https://kimball.germane.net/).
-  - Teaching assistant for CS 630 Programming Language System Models
-    (graduate-level), CS 430 Software Foundations (formalized software in Coq),
-    CS 236 Discrete Mathematics (C++), and CS 235 Data Structures (C++).
-  - Achieved CEFR C1 “advanced” proficiency in German.
-  - Leadership role in Cougar Pride Center, advocating for queer students and
+  - Teaching assistant for graduate programming language seminar, theorem
+    proving, and discrete mathematics.
+  - Achieved CEFR C1 advanced proficiency in German.
+  - Leadership role in Cougar Pride Center, advocating for LGBTQ+ students and
     coordinating events.
-  - Won honorable mention at the 2023 YHack for my compiler.
 
 ## Professional Experience
 
