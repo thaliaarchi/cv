@@ -6,10 +6,9 @@
 
 I am a second-year PhD student researching compiler verification with John
 Regehr at the University of Utah. My research interests include program
-transformations, compiler IR design, and formal verification. I aim to advance
-research in composable, verifiable, and scalable compiler infrastructures. I
-have built several compilers, worked professionally on the GraalVM compiler, and
-am proficient in many languages including Rust, C, Coq, and Go.
+transformations, compiler IR design, and formal verification. I have built
+several compilers, worked professionally on the GraalVM compiler, and am
+proficient in many languages including Rust, C, Rocq, and Go.
 
 ## Education
 
@@ -17,9 +16,11 @@ am proficient in many languages including Rust, C, Coq, and Go.
 
   *PhD in Computer Science*, August 2025 – present
 
-  - Advised by [John Regehr](https://users.cs.utah.edu/~regehr/).
-  - Ongoing research to extend [Alive2](https://alive2.llvm.org/ce/), a
-    translation validator for LLVM, to reason about loops without unrolling.
+  - Researching compiler verification, advised by [John Regehr](https://users.cs.utah.edu/~regehr/).
+  - Developing a rewrite framework for the verified [Veir](https://github.com/opencompl/veir)
+    compiler, using acyclic e-graphs.
+  - Researched scaling [Alive2](https://alive2.llvm.org/ce/), a translation
+    validator for LLVM, to verify more complex programs.
 
 - **Brigham Young University** · Provo, Utah
 
