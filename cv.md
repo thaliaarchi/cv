@@ -113,8 +113,7 @@ Projects available at [github.com/thaliaarchi](https://github.com/thaliaarchi).
   - *[GradSAC](https://discuss.systems/@thalia/116281783388964930)* ·
     University of Utah, 26 March 2026
 
-  Talk on our recovery of UNIX V4 from a 1974 magnetic tape, the
-  early history of this influential operating system, and this
-  artifact’s connection to foundational computer graphics research at
-  the University of Utah. Some presentations demonstrated period
-  software development with UNIX and a printing terminal.
+  Talk on our recovery of UNIX V4 from a 1974 magnetic tape, the early history
+  of this influential operating system, and this artifact’s connection to
+  foundational computer graphics research at the University of Utah.
+  Demonstrated period software development with UNIX and a printing terminal.
